@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="gbk">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" href="https://daoju.qq.com/favicon.ico" type="image/x-icon">
+    <meta name="renderer" content="webkit">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description"
+        content="腾讯游戏《穿越火线》下载官方网站。300万人同时在线，三亿鼠标的枪战梦想。《穿越火线》追求的不仅仅是开枪的爽快感，而是来自相互合作及默契带来的战略意义。最新活动尽在CF官方网站。">
+    <meta name="Keywords"
+        content="穿越火线,穿越火线官网,穿越火线游戏下载,穿越火线下载,穿越火线官方下载,CF官网,CF下载,CF视频,穿越火线官方下载, CF官网下载专区,QQ穿越火线官方网站,穿越火线体验服,穿越火线视频,穿越火线官方网站,CrossFire,FPS网络游戏,RPK,腾讯游戏,免费,黄金AK,百城联赛,WCG,冠军杯,生化模式,幽灵模式,生化幽灵,斯沃特,赛斯,奥摩,猎狐者,保卫者,潜伏者,飞虎队,腾讯,腾讯游戏">
+    <title>隼击长空幻灭神威-穿越火线官方网站-腾讯游戏</title>
+    <link rel="stylesheet" type="text/css" href="https://act.daoju.qq.com/act/a20231223cfvastsky/css/index.css" />
+    <link rel="stylesheet" href="ys.css" />
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="head">
+                <h1 class="hide">隼击长空</h1>
+                <a href="//cf.qq.com/main.shtml" title="穿越火线" target="_blank" class="logo sp"
+                    onclick="PTTSendClickX('link','logo','穿越火线');"></a>
+                <a href="https://daoju.qq.com/mall/" title="道聚城" target="_blank" class="logo1 sp"
+                    onclick="PTTSendClickX('link','logo1','道聚城');"></a>
+
+            </div>
+            <div class="content">
+                <div class="part1">
+                    <h2 class="tit1 sp db">主奖池</h2>
+                    <div class="btn_box1">
+                        <a href="javascript:void();" class="btn_gm1 sp"
+                            onclick="PTTSendClickX('btn','btgm1','购买复活币x1');"></a>
+                        <a href="javascript:void();" class="btn_gm2 sp"
+                            onclick="PTTSendClickX('btn','btgm2','购买复活币x10');"></a>
+                        <a href="javascript:void();" class="btn_gm3 sp"
+                            onclick="PTTSendClickX('btn','btgm3','购买复活币x1');"></a>
+                    </div>
+                    <p class="txt1">代金券最多抵扣9Q币</p>
+                    <div class="lotty1">
+                        <a href="javascript:void();" class="btn_cq1" onclick="PTTSendClickX('btn','btncq1','抽一次');"></a>
+                        <a href="javascript:void();" class="btn_cq2" onclick="PTTSendClickX('btn','btncq2','抽十次');"></a>
+                        <a href="javascript:void();" class="btn_dj3">剩余钥匙
+                            : <span class=" jf_6133" id="keys">0</span></a>
+                    </div>
+                    <div class="box1">
+                        <div class="box1ct1">
+                            <p class="txt2">抽奖获得的可分解道具进入暂存箱<br />其余道具直接发往游戏内</p>
+                            <a href="javascript:void();" class="btn_dj4 sp"
+                                onclick="PTTSendClickX('btn','btndj4','点击查看暂存箱');"></a>
+                        </div>
+                        <div class="box1ct2">
+                            <div id="milo-broadcast" class="milo-broadcast">
+                                <ul id="milo-broadcast-container"></ul>
+                            </div>
+                        </div>
+                        <script id="milo-broadcast-tpl" type="text/html">
+						{@ for(var i = 0; i < data.length; i++) { @}
+						<li><p>
+							恭喜玩家<span>{{data[i].iUin ? data[i].iUin :'xxxx'}}</span>获得了<span> {{data[i].sPackageName ? data[i].sPackageName : ''}} </span>
+						</p></li>
+						{@ } @}
+					</script>
+                    </div>
+                </div>
+                <div class="part2">
+                    <h2 class="tit2 sp db">积分兑换</h2>
+                    <p class="txt3">当前积分：<span id="jf">0</span></p>
+                    <ul class="box2">
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc1.png" />
+                            <a href="javascript:void();" class="btn_dh1 sp"
+                                onclick="PTTSendClickX('btn','btndh1','积分兑换');">898积分兑换</a>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc2.png" />
+                            <a href="javascript:void();" class="btn_dh1 sp"
+                                onclick="PTTSendClickX('btn','btndh2','积分兑换');">598积分兑换</a>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc3.png" />
+                            <a href="javascript:void();" class="btn_dh1 sp"
+                                onclick="PTTSendClickX('btn','btndh3','积分兑换');">548积分兑换</a>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc4.png" />
+                            <a href="javascript:void();" class="btn_dh1 sp"
+                                onclick="PTTSendClickX('btn','btndh4','积分兑换');">428积分兑换</a>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc5.png" />
+                            <a href="javascript:void();" class="btn_dh1 sp"
+                                onclick="PTTSendClickX('btn','btndh5','积分兑换');">298积分兑换</a>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc6.png" />
+                            <a href="javascript:void();" class="btn_dh1 sp"
+                                onclick="PTTSendClickX('btn','btndh6','积分兑换');">218积分兑换</a>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc7.png" />
+                            <a href="javascript:void();" class="btn_dh1 sp"
+                                onclick="PTTSendClickX('btn','btndh7','积分兑换');">218积分兑换</a>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc8.png" />
+                            <a href="javascript:void();" class="btn_dh1 sp"
+                                onclick="PTTSendClickX('btn','btndh8','积分兑换');">148积分兑换</a>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc9.png" />
+                            <a href="javascript:void();" class="btn_dh1 sp"
+                                onclick="PTTSendClickX('btn','btndh9','积分兑换');">58积分兑换</a>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc10.png" />
+                            <a href="javascript:void();" class="btn_dh1 sp"
+                                onclick="PTTSendClickX('btn','btndh10','积分兑换');">28积分兑换</a>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc11.png" />
+                            <a href="javascript:void();" class="btn_dh1 sp"
+                                onclick="PTTSendClickX('btn','btndh11','积分兑换');">15积分兑换</a>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc12.png" />
+                            <a href="javascript:void();" class="btn_dh1 sp"
+                                onclick="PTTSendClickX('btn','btndh12','积分兑换');">3积分兑换</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="part3">
+                    <h2 class="tit3 sp db">幻灵小队集结 </h2>
+                    <p class="txt4">购买复活币即可获赠幻灵卡，开启幻灵卡可抽取幻灵值</p>
+                    <div class="box3">
+                        <img src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc13.png" />
+                        <div class="box3ct2">
+                            <p>当前拥有幻灵卡：<span class="jf_6132" id="hlk">0</span></p>
+                            <div class="btn_box2">
+                                <a href="javascript:void();" class="btn_kq1 sp"
+                                    onclick="PTTSendClickX('btn','btnkq1','开启一次');">开启一次</a>
+                                <a href="javascript:void();" class="btn_kq2 sp"
+                                    onclick="PTTSendClickX('btn','btnkq2','开启十次');">开启十次</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box4">
+                        <p class="txt5">宝箱中王者之石，属性变更券，交易专用钥匙将直接到账，其余则发往暂存箱</p>
+                        <p class="txt6">当前个人总幻灵值：<span class="jf_6135" id="hlz1">0</span></p>
+                        <ul class="box4ct1" id="level_awards_personal">
+                            <li>
+                                <p class="txt7">个人里程碑1阶</p>
+                                <p class="txt8">个人所需幻灵值36</p>
+                                <a href="javascript:void();" class="btn_bx1"
+                                    onclick="PTTSendClickX('btn','btnbx1','宝箱');">
+                                    <img class="polc_1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc14.png" />
+                                    <img class="f_img1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/f_img1.png" />
+                                </a>
+                                <a href="javascript:void();" data-id="1" class="btn_lq1 sp"
+                                    onclick="PTTSendClickX('btn','btnlq1','点击领取');">点击领取</a>
+                            </li>
+                            <li>
+                                <p class="txt7">个人里程碑2阶</p>
+                                <p class="txt8">个人所需幻灵值106</p>
+                                <a href="javascript:void();" class="btn_bx1"
+                                    onclick="PTTSendClickX('btn','btnbx2','宝箱');">
+                                    <img class="polc_1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc15.png" />
+                                    <img class="f_img1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/f_img2.png" />
+                                </a>
+                                <a href="javascript:void();" data-id="2" class="btn_lq1 sp"
+                                    onclick="PTTSendClickX('btn','btnlq2','点击领取');">点击领取</a>
+                            </li>
+                            <li>
+                                <p class="txt7">个人里程碑3阶</p>
+                                <p class="txt8">个人所需幻灵值276</p>
+                                <a href="javascript:void();" class="btn_bx1"
+                                    onclick="PTTSendClickX('btn','btnbx3','宝箱');">
+                                    <img class="polc_1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc16.png" />
+                                    <img class="f_img1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/f_img3.png" />
+                                </a>
+                                <a href="javascript:void();" data-id="3" class="btn_lq1 sp"
+                                    onclick="PTTSendClickX('btn','btnlq3','点击领取');">点击领取</a>
+                            </li>
+                            <li>
+                                <p class="txt7">个人里程碑4阶</p>
+                                <p class="txt8">个人所需幻灵值536</p>
+                                <a href="javascript:void();" class="btn_bx1"
+                                    onclick="PTTSendClickX('btn','btnbx4','宝箱');">
+                                    <img class="polc_1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc17.png" />
+                                    <img class="f_img1 f_img1_4"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/f_img4.png" />
+                                </a>
+                                <a href="javascript:void();" data-id="4" class="btn_lq1 sp"
+                                    onclick="PTTSendClickX('btn','btnlq4','点击领取');">点击领取</a>
+                            </li>
+                            <li>
+                                <p class="txt7">个人里程碑5阶</p>
+                                <p class="txt8">个人所需幻灵值1076</p>
+                                <a href="javascript:void();" class="btn_bx1"
+                                    onclick="PTTSendClickX('btn','btnbx5','宝箱');">
+                                    <img class="polc_1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc18.png" />
+                                    <img class="f_img1 f_img1_5"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/f_img5.png" />
+                                </a>
+                                <a href="javascript:void();" data-id="5" class="btn_lq1 sp"
+                                    onclick="PTTSendClickX('btn','btnlq5','点击领取');">点击领取</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box5" id="level_awards_group">
+                        <p class="txt5">宝箱中王者之石，属性变更券，交易专用钥匙将直接到账，其余则发往暂存箱</p>
+                        <p class="txt9">当前团队总幻灵值：<span class="team_score" id="hlzt">0</span></p>
+                        <p class="txt10">当前个人总幻灵值：<span class="jf_6135" id="hlz2">0</span></p>
+                        <ul class="box4ct1">
+                            <li>
+                                <p class="txt7">团队里程碑1阶</p>
+                                <p class="txt8">所需团队总幻灵值20</p>
+                                <p class="txt8">个人所需幻灵值8</p>
+                                <a href="javascript:;" class="btn_bx1" onclick="PTTSendClickX('btn','btnbx6','宝箱');">
+                                    <img class="polc_1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc15.png" />
+                                    <img class="f_img1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/f_img2.png" />
+                                </a>
+                                <a href="javascript:;" data-id="1" class="btn_lq1 sp"
+                                    onclick="PTTSendClickX('btn','btnlq6','点击领取');">点击领取</a>
+                            </li>
+                            <li>
+                                <p class="txt7">团队里程碑2阶</p>
+                                <p class="txt8">所需团队总幻灵值145</p>
+                                <p class="txt8">个人所需幻灵值58</p>
+                                <a href="javascript:;" class="btn_bx1" onclick="PTTSendClickX('btn','btnbx7','宝箱');">
+                                    <img class="polc_1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc16.png" />
+                                    <img class="f_img1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/f_img3.png" />
+                                </a>
+                                <a href="javascript:;" data-id="2" class="btn_lq1 sp"
+                                    onclick="PTTSendClickX('btn','btnlq7','点击领取');">点击领取</a>
+                            </li>
+                            <li>
+                                <p class="txt7">团队里程碑3阶</p>
+                                <p class="txt8">所需团队总幻灵值495</p>
+                                <p class="txt8">个人所需幻灵值198</p>
+                                <a href="javascript:;" class="btn_bx1" onclick="PTTSendClickX('btn','btnbx8','宝箱');">
+                                    <img class="polc_1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc17.png" />
+                                    <img class="f_img1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/f_img4.png" />
+                                </a>
+                                <a href="javascript:;" data-id="3" class="btn_lq1 sp"
+                                    onclick="PTTSendClickX('btn','btnlq8','点击领取');">点击领取</a>
+                            </li>
+                            <li>
+                                <p class="txt7">团队里程碑4阶</p>
+                                <p class="txt8">所需团队总幻灵值1995</p>
+                                <p class="txt8">个人所需幻灵值798</p>
+                                <a href="javascript:;" class="btn_bx1" onclick="PTTSendClickX('btn','btnbx9','宝箱');">
+                                    <img class="polc_1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc18.png" />
+                                    <img class="f_img1 f_img1_4"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/f_img5.png" />
+                                </a>
+                                <a href="javascript:;" data-id="4" class="btn_lq1 sp"
+                                    onclick="PTTSendClickX('btn','btnlq9','点击领取');">点击领取</a>
+                            </li>
+                            <li>
+                                <p class="txt7">团队里程碑5阶</p>
+                                <p class="txt8">所需团队总幻灵值6888</p>
+                                <p class="txt8">个人所需幻灵值1398</p>
+                                <a href="javascript:;" class="btn_bx1" onclick="PTTSendClickX('btn','btnbx10','宝箱');">
+                                    <img class="polc_1"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc19.png" />
+                                    <img class="f_img1 f_img1_5"
+                                        src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/f_img6.png" />
+                                </a>
+                                <a href="javascript:void();" data-id="5" class="btn_lq1 sp"
+                                    onclick="PTTSendClickX('btn','btnlq10','点击领取');">点击领取</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <em class="icon_1"></em>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 暂存箱 -->
+    <div class="pop pop2" id="showMyGiftContent2"
+        style="display: block; visibility: hidden; position: fixed; z-index: 9999; left: 50%; top: 50%; margin-top: -291px; margin-left: -312px;">
+        <a href="javascript:hiddenpages('showMyGiftContent2');" class="close_btn sp"></a>
+        <div class="fc_box2">
+            <div class="fc_box2ct1">
+                <table class="table table_bor2">
+                    <thead>
+                        <tr>
+                            <th style="width: 118px;">名称</th>
+                            <th style="width: 127px;">领取道具</th>
+                            <th>分解为钥匙</th>
+                        </tr>
+                    </thead>
+                    <tbody id="getGiftContent2">
+
+                        <tr>
+                            <th style="width: 118px;">X</th>
+                            <th style="width: 127px;">Y</th>
+                            <th>Z</th>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                <a href="javascript:;" onclick="PTTSendClickX('btn','btns3','上一页')">上一页</a>
+                                <span><span class="nowPage" id="now">1</span> / <span class="totalPage"
+                                        id="total">1</span></span>
+                                <a href="javascript:;" onclick="PTTSendClickX('btn','btns4','下一页')">下一页</a>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="fc_box2ct2">
+                <p class="fc_txt1"><span>道具名称</span><span>分解所获钥匙</span></p>
+                <ul class="fc_box2ct2polc">
+                    <li>
+                        <p>非官方数据</p>
+                        <p>仅供娱乐</p>
+                    </li>
+                    <li>
+                        <p>页面官方没做好</p>
+                        <p>有bug</p>
+                    </li>
+                    <li>
+                        <p>王者风神（非觉醒版）</p>
+                        <p>12</p>
+                    </li>
+                    <li>
+                        <p>隼</p>
+                        <p>10</p>
+                    </li>
+                    <li>
+                        <p>M200-幻神</p>
+                        <p>10</p>
+                    </li>
+                    <li>
+                        <p>灵狐者-职业经理</p>
+                        <p>8</p>
+                    </li>
+                    <li>
+                        <p>Barrett-极光音效卡（不可交易）</p>
+                        <p>6</p>
+                    </li>
+                    <li>
+                        <p>炫金毁灭</p>
+                        <p>6</p>
+                    </li>
+                    <li>
+                        <p>M4A1-青龙</p>
+                        <p>4</p>
+                    </li>
+                    <li>
+                        <p>AK47-黑鲨</p>
+                        <p>4</p>
+                    </li>
+                    <li>
+                        <p>M200-幻神紫橙光效 （不可交易）</p>
+                        <p>2</p>
+                    </li>
+                    <li>
+                        <p>天使灵狐玩偶</p>
+                        <p>1</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="fc_txt2">温馨提示：虚拟道具奖品将在24小时内发到您的游戏仓库。谢谢您的理解与支持</p>
+    </div>
+
+    <!-- 礼包记录 -->
+    <div class="pop pop3" id="text3">
+        <a href="javascript:void();" class="close_btn sp"></a>
+        <div class="fc_box1">
+            <table class="table fctable_bor1">
+                <thead>
+                    <tr>
+                        <th class="th_5">时间</th>
+                        <th class="th_6">大区</th>
+                        <th>道具</th>
+                    </tr>
+                </thead>
+                <tbody id="getGiftContent1"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            <a href="javascript:void();" onclick="PTTSendClickX('btn','btns5','上一页')">上一页</a>
+                            <span><span class="nowPage">1</span> / <span class="totalPage">1</span></span>
+                            <a href="javascript:void();" onclick="PTTSendClickX('btn','btns6','下一页')">下一页</a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <p class="fc_txt2">温馨提示；虚拟道具奖品讲在24小时内发到您的游戏仓库。谢谢您的理解与支持</p>
+    </div>
+    <!-- 中奖信息 -->
+    <div class="pop pop4" id="text4">
+        <a href="javascript:void();" class="close_btn sp"></a>
+        <p class="fc_txt3">抽奖过程请勿刷新贞面或中断,请以实际礼包<br />记录为准。</p>
+        <ul class="fc_box3" id="showChouList"></ul>
+        <p class="fc_txt4">温馨提示:1.虚拟道具奖品将在24小时内发到您的游戏仓库。谢谢您的理解与支持.由于数据量巨大，奖励道具显示将有所延迟，或可存在不展示的情况，请以礼包记录为准。</p>
+    </div>
+    <!-- 中奖信息 -->
+    <div class="pop pop5" id="text5">
+        <a href="javascript:void();" class="close_btn sp"></a>
+        <p class="fc_txt3">抽奖过程请勿刷新贞面或中断,请以实际礼包<br />记录为准。</p>
+        <div class="fc_box4">
+            <p class="showAlert"></p>
+        </div>
+        <p class="fc_txt4">温馨提示:1.虚拟道具奖品将在24小时内发到您的游戏仓库。谢谢您的理解与支持.由于数据量巨大，奖励道具显示将有所延迟，或可存在不展示的情况，请以礼包记录为准。</p>
+    </div>
+    <!-- 公告 -->
+    <div class="pop pop6" id="text6">
+        <a href="javascript:void();" class="close_btn sp"></a>
+        <p>当前活动正在紧急维护，已参与用户的钥匙、<br />积分等数据将会保留， 活动重新开启后<br />可继续使用。 </p>
+    </div>
+    <!-- 公告 -->
+    <div class="pop pop7" id="text7">
+        <a href="javascript:void();" class="close_btn sp"></a>
+        <p>本次活动抽奖板块将于XX月XX日XX时XX分结束，届时抽奖钥匙将过期无法使用；<br />兑换板块将于XX月XX日XX时XX分结束，届时积分将过期无法使用； </p>
+    </div>
+    <!-- 是否确认领取 -->
+    <div class="pop pop8" id="text8">
+        <a href="javascript:void();" class="close_btn sp"></a>
+        <p class="fc_txt5">是否确认领取XXXX</p>
+        <div class="fc_btnbox2">
+            <a href="javascript:void();" class="fcbtn_qr1 sp" onclick="PTTSendClickX('btn','fcbtnqr1','确认领取')"></a>
+            <a href="javascript:void();" class="fcbtn_qr2 sp" onclick="PTTSendClickX('btn','fcbtnqr2','取消领取')"></a>
+        </div>
+    </div>
+    <!-- 是否确认分解 -->
+    <div class="pop pop8" id="text9">
+        <a href="javascript:void();" class="close_btn sp"></a>
+        <p class="fc_txt5">是否确认分解XXXX</p>
+        <div class="fc_btnbox2">
+            <a href="javascript:void();" class="fcbtn_qr3 sp" onclick="PTTSendClickX('btn','fcbtnqr3','确认')"></a>
+            <a href="javascript:void();" class="fcbtn_qr4 sp" onclick="PTTSendClickX('btn','fcbtnqr4','取消')"></a>
+        </div>
+    </div>
+    <!-- 通用 -->
+    <div class="pop pop8" id="text10">
+        <a href="javascript:void();" class="close_btn sp"></a>
+        <p class="fc_txt6"><span>抽奖钥匙过期无法领取！</span></p>
+    </div>
+    <!-- 通用 -->
+    <div class="pop pop8" id="text11">
+        <a href="javascript:void();" class="close_btn sp"></a>
+        <p class="fc_txt6"><span>当前活动正在紧急维护，已参与用户的钥匙、积分等数据将会保留，活动重新开启后可继续使用。</span></p>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <!-- 弹窗内容 -->
+        <h3>抽中的物品：</h3>
+        <ul id="prizeList"></ul>
+        <button onclick="hidePopup();">关闭</button>
+        <h3>(仅供参考)</h3>
+    </div>
+    <div class="overlay" id="overlay1"></div>
+    <div class="popup" id="popup1">
+        <!-- 弹窗内容 -->
+        <h3>恭喜你获得：</h3>
+        <ul id="prizeList1"></ul>
+        <button onclick="hidePopup1();">关闭</button>
+        <h3>(仅供参考)</h3>
+    </div>
+    <script type="text/javascript" src="./code.js" defer></script>
+    <script type="text/javascript" src="./comm.js" defer></script>
+    <script>
+        alert("非官方数据 仅供娱乐");
+        //showGiftContent(itemsX, 1);
+
+        const prizes = [
+            { name: '王者风神（非觉醒版）', probability: 0.001411 },
+            { name: '隼', probability: 0.002095 },
+            { name: 'M200-幻神', probability: 0.002095 },
+            { name: '灵狐者-职业经理', probability: 0.002928 },
+            { name: 'Barrett-极光音效卡（不可交易）', probability: 0.003148 },
+            { name: '炫金毁灭', probability: 0.005748 },
+            { name: 'M4A1-青龙', probability: 0.005748 },
+            { name: 'AK47-黑鲨', probability: 0.008466 },
+            { name: 'M200-幻神紫橙光效（不可交易）', probability: 0.011605 },
+            { name: '天使灵狐玩偶', probability: 0.014756 },
+            { name: '王者之石x1', probability: 0.05 },
+            { name: '积分x100', probability: 0.002 },
+            { name: '积分x10', probability: 0.05 },
+            { name: '积分x5', probability: 0.15 },
+            { name: '积分x4', probability: 0.32 },
+            { name: '积分x3', probability: 0.42 },
+        ];
+        const prizes2 = [
+            { name: '幻灵值x100', probability: 0.002 },
+            { name: '幻灵值x50', probability: 0.008 },
+            { name: '幻灵值x20', probability: 0.01 },
+            { name: '幻灵值x10', probability: 0.08 },
+            { name: '幻灵值x5', probability: 0.02 },
+            { name: '幻灵值x4', probability: 0.03 },
+            { name: '幻灵值x3', probability: 0.04 },
+        ];
+        const prizesggs = [[//1
+            { name: 'M200-幻神', probability: 0.0001 },
+            { name: 'M200-幻神紫橙光效（不可交易）', probability: 0.005 },
+            { name: '天使灵狐玩偶', probability: 0.005 },
+            { name: '王者之石x3', probability: 0.0099 },
+            { name: '属性变更券x5', probability: 0.08 },
+            { name: '交易专用钥匙x1', probability: 0.9 },
+        ], [//2
+            { name: 'M200-幻神', probability: 0.0005 },
+            { name: 'M4A1-青龙', probability: 0.0075 },
+            { name: 'AK47-黑鲨', probability: 0.0075 },
+            { name: 'M200-幻神紫橙光效（不可交易）', probability: 0.01 },
+            { name: '天使灵狐玩偶', probability: 0.01 },
+            { name: '王者之石x3', probability: 0.0545 },
+            { name: '属性变更券x5', probability: 0.91 },
+        ], [//3
+            { name: 'M200-幻神', probability: 0.001 },
+            { name: 'Barrett-极光音效卡（不可交易）', probability: 0.005 },
+            { name: '炫金毁灭', probability: 0.004 },
+            { name: 'M4A1-青龙', probability: 0.02 },
+            { name: 'AK47-黑鲨', probability: 0.02 },
+            { name: 'M200-幻神紫橙光效（不可交易）', probability: 0.04 },
+            { name: '天使灵狐玩偶', probability: 0.05 },
+            { name: '王者之石x3', probability: 0.86 },
+        ], [//4
+            { name: 'M200-幻神', probability: 0.002 },
+            { name: '灵狐者-职业经理', probability: 0.002 },
+            { name: 'Barrett-极光音效卡（不可交易）', probability: 0.015 },
+            { name: '炫金毁灭', probability: 0.015 },
+            { name: 'M4A1-青龙', probability: 0.038 },
+            { name: 'AK47-黑鲨', probability: 0.038 },
+            { name: 'M200-幻神紫橙光效（不可交易）', probability: 0.44 },
+            { name: '天使灵狐玩偶', probability: 0.45 },
+        ], [//5
+            { name: '隼', probability: 0.004 },
+            { name: 'M200-幻神', probability: 0.004 },
+            { name: '灵狐者-职业经理', probability: 0.004 },
+            { name: 'Barrett-极光音效卡（不可交易）', probability: 0.039 },
+            { name: '炫金毁灭', probability: 0.032 },
+            { name: 'M4A1-青龙', probability: 0.25 },
+            { name: 'AK47-黑鲨', probability: 0.627 },
+            { name: 'M200-幻神紫橙光效（不可交易）', probability: 0.04 },
+
+        ], [//2-1
+            { name: 'M200-幻神', probability: 0.0005 },
+            { name: 'M4A1-青龙', probability: 0.0075 },
+            { name: 'AK47-黑鲨', probability: 0.0075 },
+            { name: 'M200-幻神紫橙光效（不可交易）', probability: 0.01 },
+            { name: '天使灵狐玩偶', probability: 0.01 },
+            { name: '王者之石x3', probability: 0.0545 },
+            { name: '属性变更券x5', probability: 0.91 },
+        ], [//2-2
+            { name: 'M200-幻神', probability: 0.001 },
+            { name: 'Barrett-极光音效卡（不可交易）', probability: 0.005 },
+            { name: '炫金毁灭', probability: 0.004 },
+            { name: 'M4A1-青龙', probability: 0.02 },
+            { name: 'AK47-黑鲨', probability: 0.02 },
+            { name: 'M200-幻神紫橙光效（不可交易）', probability: 0.04 },
+            { name: '天使灵狐玩偶', probability: 0.05 },
+            { name: '王者之石x3', probability: 0.86 },
+        ], [//2-3
+            { name: 'M200-幻神', probability: 0.002 },
+            { name: '灵狐者-职业经理', probability: 0.002 },
+            { name: 'Barrett-极光音效卡（不可交易）', probability: 0.015 },
+            { name: '炫金毁灭', probability: 0.015 },
+            { name: 'M4A1-青龙', probability: 0.038 },
+            { name: 'AK47-黑鲨', probability: 0.038 },
+            { name: 'M200-幻神紫橙光效（不可交易）', probability: 0.44 },
+            { name: '天使灵狐玩偶', probability: 0.45 },
+        ], [//2-4
+            { name: '隼', probability: 0.004 },
+            { name: 'M200-幻神', probability: 0.004 },
+            { name: '灵狐者-职业经理', probability: 0.004 },
+            { name: 'Barrett-极光音效卡（不可交易）', probability: 0.039 },
+            { name: '炫金毁灭', probability: 0.032 },
+            { name: 'M4A1-青龙', probability: 0.25 },
+            { name: 'AK47-黑鲨', probability: 0.627 },
+            { name: 'M200-幻神紫橙光效（不可交易）', probability: 0.04 },
+
+        ], [//2-5
+            { name: '隼', probability: 0.008 },
+            { name: 'M200-幻神', probability: 0.008 },
+            { name: '灵狐者-职业经理', probability: 0.012 },
+            { name: 'Barrett-极光音效卡（不可交易）', probability: 0.039 },
+            { name: '炫金毁灭', probability: 0.032 },
+            { name: 'M4A1-青龙', probability: 0.39 },
+            { name: 'AK47-黑鲨', probability: 0.511 },
+        ]];
+        var L_b = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        var PZX = ['王者风神（非觉醒版）', 'M200-幻神', '隼', '灵狐者-职业经理', 'Barrett-极光音效卡（不可交易）', '炫金毁灭', 'M4A1-青龙', 'AK47-黑鲨', 'M200-幻神紫橙光效（不可交易）', '天使灵狐玩偶'], nul = [];
+        var S = ['王者风神（非觉醒版）', '隼', 'M200-幻神', '灵狐者-职业经理', 'Barrett-极光音效卡（不可交易）', '炫金毁灭', 'M4A1-青龙', 'AK47-黑鲨', 'M200-幻神紫橙光效（不可交易）', '天使灵狐玩偶', '属性变更券x5', '交易所专用钥匙x1'];
+        var Jf = [898, 598, 548, 428, 298, 218, 218, 148, 58, 28, 15, 3];
+        var Hl = [36, 106, 276, 536, 1076, 8, 58, 198, 798, 1398];
+        var H2 = [0, 0, 0, 0, 0, 20, 145, 495, 1995, 6888];
+        //////////////////////////PTTS//////////////////////////
+        function PTTSendClickX(btnType, btnId, btnText) {
+            if (btnId == 'btgm1') { alert("成功获得：钥匙*1 幻灵卡*1"); keys += 1; hlk += 1; }
+            else if (btnId == 'btgm2') { alert("成功获得：钥匙*11 幻灵卡*10"); keys += 11; hlk += 10; }
+            else if (btnId == 'btgm3') { alert("成功获得：钥匙*1000 幻灵卡*1000"); keys += 1000; hlk += 1000; }
+            else if (btnId == 'btncq1') { if (keys < 1) { alert("钥匙不足"); return; } keys -= 1; drawLottery(1, prizes, PZX); }//单抽
+            else if (btnId == 'btncq2') { if (keys < 10) { alert("钥匙不足"); return; } keys -= 10; drawLottery(10, prizes, PZX); }//十连
+            else if (btnId == 'btndj4') { showGiftContent(itemsX, 1); showpages("showMyGiftContent2"); }
+            else if (btnId == 'btns3') { if (pagesid == 1) { alert("已经是第一页了"); return; } showGiftContent(itemsX, pagesid - 1); }
+            else if (btnId == 'btns4') { if (pagesid == totalPagesX) { alert("已经是最后一页了"); return; } showGiftContent(itemsX, pagesid + 1); }
+            else if (btnText == '积分兑换') {
+                var idx = parseInt(btnId.match(/\d+(\.\d+)?/g)[0]) - 1;
+                if (jf < Jf[idx]) { alert("积分不足"); return; }
+                jf -= Jf[idx];
+                alert("成功兑换：【" + S[idx] + "】消耗：【" + Jf[idx] + "】积分");
+            }
+            else if (btnId == 'btnkq1') {
+                if (hlk < 1) { alert("幻灵卡不足"); return; } hlk -= 1; drawLottery(1, prizes2, nul);
+            }
+            else if (btnId == 'btnkq2') { if (hlk < 10) { alert("幻灵卡不足"); return; } hlk -= 10; drawLottery(10, prizes2, nul); }
+            else if (btnText == '点击领取') {
+                var level = parseInt(btnId.match(/\d+(\.\d+)?/g)[0]) - 1;
+                if (level + 1 <= 5) {//个人
+                    if (L_b[level] == 1) { alert("已经领取过了"); return; }
+                    if (hlz < Hl[level]) { alert("幻灵值不足"); return; }
+                    drawLottery(1, prizesggs[level], PZX);
+                    L_b[level] = 1;
+                }
+                else {//团队
+                    if (L_b[level] == 1) { alert("已经领取过了"); return; }
+                    if (hlz < Hl[level]) { alert("个人幻灵值不足"); return; }
+                    if (hlzt < H2[level]) { alert("团队幻灵值不足"); return; }
+                    drawLottery(1, prizesggs[level], PZX);
+                    L_b[level] = 1;
+                }
+            }
+            updateDisplay('keys', keys);
+            updateDisplay('jf', jf);
+            updateDisplay('hlz1', hlz);
+            updateDisplay('hlz2', hlz);
+            hlzt = hlz + parseInt(hlz * 0.8) * 5;
+            updateDisplay('hlzt', hlzt);
+            updateDisplay('hlk', hlk);
+
+        }
+        //////////////////////////PTTS//////////////////////////
+    </script>
+
+    <script src="https://js01.daoju.qq.com/common/js/act/dj_header_v2.js"></script>
+    <script src="https://ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+    <script src="https://game.gtimg.cn/images/js/2018foot/foot.js"></script>
+    <script src="https://ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+    <script src="https://game.gtimg.cn/images/js/milo-next/latest/milo.gbk.min.js"></script>
+    <script src="https://act.daoju.qq.com/act/a20231223cfvastsky/js/copy.js"></script>
+    <script src="https://act.daoju.qq.com/act/a20231223cfvastsky/js/config_v1.js"></script>
+    <script src="./index.js"></script>
+
+    <script type="text/javascript">
+        $(".btn_box3 a").on("click", function () {
+            if ($(this).hasClass("cur")) {
+                return;
+            }
+            $(".btn_box3 a").removeClass('cur');
+            $(this).addClass('cur');
+            $('.box7ct1').hide();
+            $('.box7ct1').eq($(this).index()).show();
+        })
+        $(".btn_gb").on("click", function () {
+            $('.fc').hide();
+        })
+        /*弹窗*/
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity: 60 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+    </script>
+
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+
+
+
+
+</body>
+
+</html>
