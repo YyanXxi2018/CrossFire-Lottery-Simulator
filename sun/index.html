@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
+    <meta charset="UTF-8" />
     <meta name="generator" content="HTML Tidy for HTML5 for Windows version 5.2.0" />
     <meta charset="gbk" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -57,11 +58,12 @@
               </div>
             </div>
             <script id="milo-broadcast-tpl" type="text/html">
-                                                {@ for(var i = 0; i &lt; data.length; i++) { @}
-                                                &lt;li&gt;&lt;p&gt;
-                                                        恭喜玩家&lt;span&gt;{{data[i].iUin ? data[i].iUin
-:&#39;xxxx&#39;}}&lt;/span&gt;获得了&lt;span&gt; {{data[i].sPackageName ? data[i].sPackageName : &#39;&#39;}} &lt;/span&gt;
-                                                &lt;/p&gt;&lt;/li&gt;
+                                                {@ for(var i = 0; i &amp;lt; data.length; i++) { @}
+                                                &amp;lt;li&amp;gt;&amp;lt;p&amp;gt;
+                                                        恭喜玩家&amp;lt;span&amp;gt;{{data[i].iUin ? data[i].iUin
+:&amp;#39;xxxx&amp;#39;}}&amp;lt;/span&amp;gt;获得了&amp;lt;span&amp;gt; {{data[i].sPackageName ? data[i].sPackageName :
+&amp;#39;&amp;#39;}} &amp;lt;/span&amp;gt;
+                                                &amp;lt;/p&amp;gt;&amp;lt;/li&amp;gt;
                                                 {@ } @}
                                         
 </script>
@@ -69,7 +71,7 @@
         </div>
         <div class="part2">
           <h2 class="tit2 sp db">积分兑换</h2>
-          <p class="txt3">当前积分：
+          <p class="txt3">当前积分： 
           <span id="jf">0</span></p>
           <ul class="box2">
             <li>
@@ -128,7 +130,7 @@
           <div class="box3">
             <img src="//game.gtimg.cn/images/actdaoju/act/a20231223cfvastsky/polc13.png" />
             <div class="box3ct2">
-              <p>当前拥有幻灵卡：
+              <p>当前拥有幻灵卡： 
               <span class="jf_6132" id="hlk">0</span></p>
               <div class="btn_box2">
               <a href="javascript:void();" class="btn_kq1 sp"
@@ -140,7 +142,7 @@
           <div class="box4">
             <p class="txt5">
             宝箱中王者之石，属性变更券，交易专用钥匙将直接到账，其余则发往暂存箱</p>
-            <p class="txt6">当前个人总幻灵值：
+            <p class="txt6">当前个人总幻灵值： 
             <span class="jf_6135" id="hlz1">0</span></p>
             <ul class="box4ct1" id="level_awards_personal">
               <li>
@@ -193,9 +195,9 @@
           <div class="box5" id="level_awards_group">
             <p class="txt5">
             宝箱中王者之石，属性变更券，交易专用钥匙将直接到账，其余则发往暂存箱</p>
-            <p class="txt9">当前团队总幻灵值：
+            <p class="txt9">当前团队总幻灵值： 
             <span class="team_score" id="hlzt">0</span></p>
-            <p class="txt10">当前个人总幻灵值：
+            <p class="txt10">当前个人总幻灵值： 
             <span class="jf_6135" id="hlz2">0</span></p>
             <ul class="box4ct1">
               <li>
@@ -285,9 +287,8 @@
       </div>
       <div class="fc_box2ct2">
         <p class="fc_txt1">
-          <span>道具名称</span>
-          <span>分解所获钥匙</span>
-        </p>
+        <span>道具名称</span> 
+        <span>分解所获钥匙</span></p>
         <ul class="fc_box2ct2polc">
           <li>
             <p>非官方数据</p>
@@ -456,185 +457,200 @@
   <script type="text/javascript" src="./code.js" defer="defer"></script> 
   <script type="text/javascript" src="./comm.js" defer="defer"></script> 
   <script>
-        alert(&quot;非官方数据 仅供娱乐&quot;);
+        alert(&amp;quot;非官方数据 仅供娱乐&amp;quot;);
         //showGiftContent(itemsX, 1);
 
         const prizes = [
-            { name: &#39;王者风神（非觉醒版）&#39;, probability: 0.001411 },
-            { name: &#39;隼&#39;, probability: 0.002095 },
-            { name: &#39;M200-幻神&#39;, probability: 0.002095 },
-            { name: &#39;灵狐者-职业经理&#39;, probability: 0.002928 },
-            { name: &#39;Barrett-极光音效卡（不可交易）&#39;, probability: 0.003148 },
-            { name: &#39;炫金毁灭&#39;, probability: 0.005748 },
-            { name: &#39;M4A1-青龙&#39;, probability: 0.005748 },
-            { name: &#39;AK47-黑鲨&#39;, probability: 0.008466 },
-            { name: &#39;M200-幻神紫橙光效（不可交易）&#39;, probability: 0.011605 },
-            { name: &#39;天使灵狐玩偶&#39;, probability: 0.014756 },
-            { name: &#39;王者之石x1&#39;, probability: 0.05 },
-            { name: &#39;积分x100&#39;, probability: 0.002 },
-            { name: &#39;积分x10&#39;, probability: 0.05 },
-            { name: &#39;积分x5&#39;, probability: 0.15 },
-            { name: &#39;积分x4&#39;, probability: 0.32 },
-            { name: &#39;积分x3&#39;, probability: 0.42 },
+            { name: &amp;#39;王者风神（非觉醒版）&amp;#39;, probability: 0.001411 },
+            { name: &amp;#39;隼&amp;#39;, probability: 0.002095 },
+            { name: &amp;#39;M200-幻神&amp;#39;, probability: 0.002095 },
+            { name: &amp;#39;灵狐者-职业经理&amp;#39;, probability: 0.002928 },
+            { name: &amp;#39;Barrett-极光音效卡（不可交易）&amp;#39;, probability: 0.003148 },
+            { name: &amp;#39;炫金毁灭&amp;#39;, probability: 0.005748 },
+            { name: &amp;#39;M4A1-青龙&amp;#39;, probability: 0.005748 },
+            { name: &amp;#39;AK47-黑鲨&amp;#39;, probability: 0.008466 },
+            { name: &amp;#39;M200-幻神紫橙光效（不可交易）&amp;#39;, probability: 0.011605 },
+            { name: &amp;#39;天使灵狐玩偶&amp;#39;, probability: 0.014756 },
+            { name: &amp;#39;王者之石x1&amp;#39;, probability: 0.05 },
+            { name: &amp;#39;积分x100&amp;#39;, probability: 0.002 },
+            { name: &amp;#39;积分x10&amp;#39;, probability: 0.05 },
+            { name: &amp;#39;积分x5&amp;#39;, probability: 0.15 },
+            { name: &amp;#39;积分x4&amp;#39;, probability: 0.32 },
+            { name: &amp;#39;积分x3&amp;#39;, probability: 0.42 },
         ];
         const prizes2 = [
-            { name: &#39;幻灵值x100&#39;, probability: 0.002 },
-            { name: &#39;幻灵值x50&#39;, probability: 0.008 },
-            { name: &#39;幻灵值x20&#39;, probability: 0.01 },
-            { name: &#39;幻灵值x10&#39;, probability: 0.08 },
-            { name: &#39;幻灵值x5&#39;, probability: 0.02 },
-            { name: &#39;幻灵值x4&#39;, probability: 0.03 },
-            { name: &#39;幻灵值x3&#39;, probability: 0.04 },
+            { name: &amp;#39;幻灵值x100&amp;#39;, probability: 0.002 },
+            { name: &amp;#39;幻灵值x50&amp;#39;, probability: 0.008 },
+            { name: &amp;#39;幻灵值x20&amp;#39;, probability: 0.01 },
+            { name: &amp;#39;幻灵值x10&amp;#39;, probability: 0.08 },
+            { name: &amp;#39;幻灵值x5&amp;#39;, probability: 0.02 },
+            { name: &amp;#39;幻灵值x4&amp;#39;, probability: 0.03 },
+            { name: &amp;#39;幻灵值x3&amp;#39;, probability: 0.04 },
         ];
         const prizesggs = [[//1
-            { name: &#39;M200-幻神&#39;, probability: 0.0001 },
-            { name: &#39;M200-幻神紫橙光效（不可交易）&#39;, probability: 0.005 },
-            { name: &#39;天使灵狐玩偶&#39;, probability: 0.005 },
-            { name: &#39;王者之石x3&#39;, probability: 0.0099 },
-            { name: &#39;属性变更券x5&#39;, probability: 0.08 },
-            { name: &#39;交易专用钥匙x1&#39;, probability: 0.9 },
+            { name: &amp;#39;M200-幻神&amp;#39;, probability: 0.0001 },
+            { name: &amp;#39;M200-幻神紫橙光效（不可交易）&amp;#39;, probability: 0.005 },
+            { name: &amp;#39;天使灵狐玩偶&amp;#39;, probability: 0.005 },
+            { name: &amp;#39;王者之石x3&amp;#39;, probability: 0.0099 },
+            { name: &amp;#39;属性变更券x5&amp;#39;, probability: 0.08 },
+            { name: &amp;#39;交易专用钥匙x1&amp;#39;, probability: 0.9 },
         ], [//2
-            { name: &#39;M200-幻神&#39;, probability: 0.0005 },
-            { name: &#39;M4A1-青龙&#39;, probability: 0.0075 },
-            { name: &#39;AK47-黑鲨&#39;, probability: 0.0075 },
-            { name: &#39;M200-幻神紫橙光效（不可交易）&#39;, probability: 0.01 },
-            { name: &#39;天使灵狐玩偶&#39;, probability: 0.01 },
-            { name: &#39;王者之石x3&#39;, probability: 0.0545 },
-            { name: &#39;属性变更券x5&#39;, probability: 0.91 },
+            { name: &amp;#39;M200-幻神&amp;#39;, probability: 0.0005 },
+            { name: &amp;#39;M4A1-青龙&amp;#39;, probability: 0.0075 },
+            { name: &amp;#39;AK47-黑鲨&amp;#39;, probability: 0.0075 },
+            { name: &amp;#39;M200-幻神紫橙光效（不可交易）&amp;#39;, probability: 0.01 },
+            { name: &amp;#39;天使灵狐玩偶&amp;#39;, probability: 0.01 },
+            { name: &amp;#39;王者之石x3&amp;#39;, probability: 0.0545 },
+            { name: &amp;#39;属性变更券x5&amp;#39;, probability: 0.91 },
         ], [//3
-            { name: &#39;M200-幻神&#39;, probability: 0.001 },
-            { name: &#39;Barrett-极光音效卡（不可交易）&#39;, probability: 0.005 },
-            { name: &#39;炫金毁灭&#39;, probability: 0.004 },
-            { name: &#39;M4A1-青龙&#39;, probability: 0.02 },
-            { name: &#39;AK47-黑鲨&#39;, probability: 0.02 },
-            { name: &#39;M200-幻神紫橙光效（不可交易）&#39;, probability: 0.04 },
-            { name: &#39;天使灵狐玩偶&#39;, probability: 0.05 },
-            { name: &#39;王者之石x3&#39;, probability: 0.86 },
+            { name: &amp;#39;M200-幻神&amp;#39;, probability: 0.001 },
+            { name: &amp;#39;Barrett-极光音效卡（不可交易）&amp;#39;, probability: 0.005 },
+            { name: &amp;#39;炫金毁灭&amp;#39;, probability: 0.004 },
+            { name: &amp;#39;M4A1-青龙&amp;#39;, probability: 0.02 },
+            { name: &amp;#39;AK47-黑鲨&amp;#39;, probability: 0.02 },
+            { name: &amp;#39;M200-幻神紫橙光效（不可交易）&amp;#39;, probability: 0.04 },
+            { name: &amp;#39;天使灵狐玩偶&amp;#39;, probability: 0.05 },
+            { name: &amp;#39;王者之石x3&amp;#39;, probability: 0.86 },
         ], [//4
-            { name: &#39;M200-幻神&#39;, probability: 0.002 },
-            { name: &#39;灵狐者-职业经理&#39;, probability: 0.002 },
-            { name: &#39;Barrett-极光音效卡（不可交易）&#39;, probability: 0.015 },
-            { name: &#39;炫金毁灭&#39;, probability: 0.015 },
-            { name: &#39;M4A1-青龙&#39;, probability: 0.038 },
-            { name: &#39;AK47-黑鲨&#39;, probability: 0.038 },
-            { name: &#39;M200-幻神紫橙光效（不可交易）&#39;, probability: 0.44 },
-            { name: &#39;天使灵狐玩偶&#39;, probability: 0.45 },
+            { name: &amp;#39;M200-幻神&amp;#39;, probability: 0.002 },
+            { name: &amp;#39;灵狐者-职业经理&amp;#39;, probability: 0.002 },
+            { name: &amp;#39;Barrett-极光音效卡（不可交易）&amp;#39;, probability: 0.015 },
+            { name: &amp;#39;炫金毁灭&amp;#39;, probability: 0.015 },
+            { name: &amp;#39;M4A1-青龙&amp;#39;, probability: 0.038 },
+            { name: &amp;#39;AK47-黑鲨&amp;#39;, probability: 0.038 },
+            { name: &amp;#39;M200-幻神紫橙光效（不可交易）&amp;#39;, probability: 0.44 },
+            { name: &amp;#39;天使灵狐玩偶&amp;#39;, probability: 0.45 },
         ], [//5
-            { name: &#39;隼&#39;, probability: 0.004 },
-            { name: &#39;M200-幻神&#39;, probability: 0.004 },
-            { name: &#39;灵狐者-职业经理&#39;, probability: 0.004 },
-            { name: &#39;Barrett-极光音效卡（不可交易）&#39;, probability: 0.039 },
-            { name: &#39;炫金毁灭&#39;, probability: 0.032 },
-            { name: &#39;M4A1-青龙&#39;, probability: 0.25 },
-            { name: &#39;AK47-黑鲨&#39;, probability: 0.627 },
-            { name: &#39;M200-幻神紫橙光效（不可交易）&#39;, probability: 0.04 },
+            { name: &amp;#39;隼&amp;#39;, probability: 0.004 },
+            { name: &amp;#39;M200-幻神&amp;#39;, probability: 0.004 },
+            { name: &amp;#39;灵狐者-职业经理&amp;#39;, probability: 0.004 },
+            { name: &amp;#39;Barrett-极光音效卡（不可交易）&amp;#39;, probability: 0.039 },
+            { name: &amp;#39;炫金毁灭&amp;#39;, probability: 0.032 },
+            { name: &amp;#39;M4A1-青龙&amp;#39;, probability: 0.25 },
+            { name: &amp;#39;AK47-黑鲨&amp;#39;, probability: 0.627 },
+            { name: &amp;#39;M200-幻神紫橙光效（不可交易）&amp;#39;, probability: 0.04 },
 
         ], [//2-1
-            { name: &#39;M200-幻神&#39;, probability: 0.0005 },
-            { name: &#39;M4A1-青龙&#39;, probability: 0.0075 },
-            { name: &#39;AK47-黑鲨&#39;, probability: 0.0075 },
-            { name: &#39;M200-幻神紫橙光效（不可交易）&#39;, probability: 0.01 },
-            { name: &#39;天使灵狐玩偶&#39;, probability: 0.01 },
-            { name: &#39;王者之石x3&#39;, probability: 0.0545 },
-            { name: &#39;属性变更券x5&#39;, probability: 0.91 },
+            { name: &amp;#39;M200-幻神&amp;#39;, probability: 0.0005 },
+            { name: &amp;#39;M4A1-青龙&amp;#39;, probability: 0.0075 },
+            { name: &amp;#39;AK47-黑鲨&amp;#39;, probability: 0.0075 },
+            { name: &amp;#39;M200-幻神紫橙光效（不可交易）&amp;#39;, probability: 0.01 },
+            { name: &amp;#39;天使灵狐玩偶&amp;#39;, probability: 0.01 },
+            { name: &amp;#39;王者之石x3&amp;#39;, probability: 0.0545 },
+            { name: &amp;#39;属性变更券x5&amp;#39;, probability: 0.91 },
         ], [//2-2
-            { name: &#39;M200-幻神&#39;, probability: 0.001 },
-            { name: &#39;Barrett-极光音效卡（不可交易）&#39;, probability: 0.005 },
-            { name: &#39;炫金毁灭&#39;, probability: 0.004 },
-            { name: &#39;M4A1-青龙&#39;, probability: 0.02 },
-            { name: &#39;AK47-黑鲨&#39;, probability: 0.02 },
-            { name: &#39;M200-幻神紫橙光效（不可交易）&#39;, probability: 0.04 },
-            { name: &#39;天使灵狐玩偶&#39;, probability: 0.05 },
-            { name: &#39;王者之石x3&#39;, probability: 0.86 },
+            { name: &amp;#39;M200-幻神&amp;#39;, probability: 0.001 },
+            { name: &amp;#39;Barrett-极光音效卡（不可交易）&amp;#39;, probability: 0.005 },
+            { name: &amp;#39;炫金毁灭&amp;#39;, probability: 0.004 },
+            { name: &amp;#39;M4A1-青龙&amp;#39;, probability: 0.02 },
+            { name: &amp;#39;AK47-黑鲨&amp;#39;, probability: 0.02 },
+            { name: &amp;#39;M200-幻神紫橙光效（不可交易）&amp;#39;, probability: 0.04 },
+            { name: &amp;#39;天使灵狐玩偶&amp;#39;, probability: 0.05 },
+            { name: &amp;#39;王者之石x3&amp;#39;, probability: 0.86 },
         ], [//2-3
-            { name: &#39;M200-幻神&#39;, probability: 0.002 },
-            { name: &#39;灵狐者-职业经理&#39;, probability: 0.002 },
-            { name: &#39;Barrett-极光音效卡（不可交易）&#39;, probability: 0.015 },
-            { name: &#39;炫金毁灭&#39;, probability: 0.015 },
-            { name: &#39;M4A1-青龙&#39;, probability: 0.038 },
-            { name: &#39;AK47-黑鲨&#39;, probability: 0.038 },
-            { name: &#39;M200-幻神紫橙光效（不可交易）&#39;, probability: 0.44 },
-            { name: &#39;天使灵狐玩偶&#39;, probability: 0.45 },
+            { name: &amp;#39;M200-幻神&amp;#39;, probability: 0.002 },
+            { name: &amp;#39;灵狐者-职业经理&amp;#39;, probability: 0.002 },
+            { name: &amp;#39;Barrett-极光音效卡（不可交易）&amp;#39;, probability: 0.015 },
+            { name: &amp;#39;炫金毁灭&amp;#39;, probability: 0.015 },
+            { name: &amp;#39;M4A1-青龙&amp;#39;, probability: 0.038 },
+            { name: &amp;#39;AK47-黑鲨&amp;#39;, probability: 0.038 },
+            { name: &amp;#39;M200-幻神紫橙光效（不可交易）&amp;#39;, probability: 0.44 },
+            { name: &amp;#39;天使灵狐玩偶&amp;#39;, probability: 0.45 },
         ], [//2-4
-            { name: &#39;隼&#39;, probability: 0.004 },
-            { name: &#39;M200-幻神&#39;, probability: 0.004 },
-            { name: &#39;灵狐者-职业经理&#39;, probability: 0.004 },
-            { name: &#39;Barrett-极光音效卡（不可交易）&#39;, probability: 0.039 },
-            { name: &#39;炫金毁灭&#39;, probability: 0.032 },
-            { name: &#39;M4A1-青龙&#39;, probability: 0.25 },
-            { name: &#39;AK47-黑鲨&#39;, probability: 0.627 },
-            { name: &#39;M200-幻神紫橙光效（不可交易）&#39;, probability: 0.04 },
+            { name: &amp;#39;隼&amp;#39;, probability: 0.004 },
+            { name: &amp;#39;M200-幻神&amp;#39;, probability: 0.004 },
+            { name: &amp;#39;灵狐者-职业经理&amp;#39;, probability: 0.004 },
+            { name: &amp;#39;Barrett-极光音效卡（不可交易）&amp;#39;, probability: 0.039 },
+            { name: &amp;#39;炫金毁灭&amp;#39;, probability: 0.032 },
+            { name: &amp;#39;M4A1-青龙&amp;#39;, probability: 0.25 },
+            { name: &amp;#39;AK47-黑鲨&amp;#39;, probability: 0.627 },
+            { name: &amp;#39;M200-幻神紫橙光效（不可交易）&amp;#39;, probability: 0.04 },
 
         ], [//2-5
-            { name: &#39;隼&#39;, probability: 0.008 },
-            { name: &#39;M200-幻神&#39;, probability: 0.008 },
-            { name: &#39;灵狐者-职业经理&#39;, probability: 0.012 },
-            { name: &#39;Barrett-极光音效卡（不可交易）&#39;, probability: 0.039 },
-            { name: &#39;炫金毁灭&#39;, probability: 0.032 },
-            { name: &#39;M4A1-青龙&#39;, probability: 0.39 },
-            { name: &#39;AK47-黑鲨&#39;, probability: 0.511 },
+            { name: &amp;#39;隼&amp;#39;, probability: 0.008 },
+            { name: &amp;#39;M200-幻神&amp;#39;, probability: 0.008 },
+            { name: &amp;#39;灵狐者-职业经理&amp;#39;, probability: 0.012 },
+            { name: &amp;#39;Barrett-极光音效卡（不可交易）&amp;#39;, probability: 0.039 },
+            { name: &amp;#39;炫金毁灭&amp;#39;, probability: 0.032 },
+            { name: &amp;#39;M4A1-青龙&amp;#39;, probability: 0.39 },
+            { name: &amp;#39;AK47-黑鲨&amp;#39;, probability: 0.511 },
         ]];
         var L_b = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-        var PZX = [&#39;王者风神（非觉醒版）&#39;, &#39;M200-幻神&#39;, &#39;隼&#39;,
-&#39;灵狐者-职业经理&#39;, &#39;Barrett-极光音效卡（不可交易）&#39;, &#39;炫金毁灭&#39;,
-&#39;M4A1-青龙&#39;, &#39;AK47-黑鲨&#39;, &#39;M200-幻神紫橙光效（不可交易）&#39;, &#39;天使灵狐玩偶&#39;],
+        var PZX = [&amp;#39;王者风神（非觉醒版）&amp;#39;, &amp;#39;M200-幻神&amp;#39;, &amp;#39;隼&amp;#39;,
+&amp;#39;灵狐者-职业经理&amp;#39;, &amp;#39;Barrett-极光音效卡（不可交易）&amp;#39;,
+&amp;#39;炫金毁灭&amp;#39;,
+&amp;#39;M4A1-青龙&amp;#39;, &amp;#39;AK47-黑鲨&amp;#39;, &amp;#39;M200-幻神紫橙光效（不可交易）&amp;#39;,
+&amp;#39;天使灵狐玩偶&amp;#39;],
 nul = [];
-        var S = [&#39;王者风神（非觉醒版）&#39;, &#39;隼&#39;, &#39;M200-幻神&#39;, &#39;灵狐者-职业经理&#39;,
-&#39;Barrett-极光音效卡（不可交易）&#39;, &#39;炫金毁灭&#39;, &#39;M4A1-青龙&#39;, &#39;AK47-黑鲨&#39;,
-&#39;M200-幻神紫橙光效（不可交易）&#39;, &#39;天使灵狐玩偶&#39;, &#39;属性变更券x5&#39;,
-&#39;交易所专用钥匙x1&#39;];
+        var S = [&amp;#39;王者风神（非觉醒版）&amp;#39;, &amp;#39;隼&amp;#39;, &amp;#39;M200-幻神&amp;#39;,
+&amp;#39;灵狐者-职业经理&amp;#39;,
+&amp;#39;Barrett-极光音效卡（不可交易）&amp;#39;, &amp;#39;炫金毁灭&amp;#39;, &amp;#39;M4A1-青龙&amp;#39;,
+&amp;#39;AK47-黑鲨&amp;#39;,
+&amp;#39;M200-幻神紫橙光效（不可交易）&amp;#39;, &amp;#39;天使灵狐玩偶&amp;#39;,
+&amp;#39;属性变更券x5&amp;#39;,
+&amp;#39;交易所专用钥匙x1&amp;#39;];
         var Jf = [898, 598, 548, 428, 298, 218, 218, 148, 58, 28, 15, 3];
         var Hl = [36, 106, 276, 536, 1076, 8, 58, 198, 798, 1398];
         var H2 = [0, 0, 0, 0, 0, 20, 145, 495, 1995, 6888];
         //////////////////////////PTTS//////////////////////////
         function PTTSendClickX(btnType, btnId, btnText) {
-            if (btnId == &#39;btgm1&#39;) { alert(&quot;成功获得：钥匙*1 幻灵卡*1&quot;); keys += 1; hlk += 1; }
-            else if (btnId == &#39;btgm2&#39;) { alert(&quot;成功获得：钥匙*11 幻灵卡*10&quot;); keys += 11; hlk += 10; }
-            else if (btnId == &#39;btgm3&#39;) { alert(&quot;成功获得：钥匙*1000 幻灵卡*1000&quot;); keys += 1000; hlk +=
+            if (btnId == &amp;#39;btgm1&amp;#39;) { alert(&amp;quot;成功获得：钥匙*1 幻灵卡*1&amp;quot;); keys += 1; hlk
++= 1; }
+            else if (btnId == &amp;#39;btgm2&amp;#39;) { alert(&amp;quot;成功获得：钥匙*11 幻灵卡*10&amp;quot;); keys +=
+11; hlk += 10; }
+            else if (btnId == &amp;#39;btgm3&amp;#39;) { alert(&amp;quot;成功获得：钥匙*1000 幻灵卡*1000&amp;quot;); keys
++= 1000; hlk +=
 1000; }
-            else if (btnId == &#39;btncq1&#39;) { if (keys &lt; 1) { alert(&quot;钥匙不足&quot;); return; } keys -= 1;
+            else if (btnId == &amp;#39;btncq1&amp;#39;) { if (keys &amp;lt; 1) { alert(&amp;quot;钥匙不足&amp;quot;); return; }
+keys -= 1;
 drawLottery(1, prizes, PZX); }//单抽
-            else if (btnId == &#39;btncq2&#39;) { if (keys &lt; 10) { alert(&quot;钥匙不足&quot;); return; } keys -= 10;
+            else if (btnId == &amp;#39;btncq2&amp;#39;) { if (keys &amp;lt; 10) { alert(&amp;quot;钥匙不足&amp;quot;); return;
+} keys -= 10;
 drawLottery(10, prizes, PZX); }//十连
-            else if (btnId == &#39;btndj4&#39;) { showGiftContent(itemsX, 1); showpages(&quot;showMyGiftContent2&quot;); }
-            else if (btnId == &#39;btns3&#39;) { if (pagesid == 1) { alert(&quot;已经是第一页了&quot;); return; }
+            else if (btnId == &amp;#39;btndj4&amp;#39;) { showGiftContent(itemsX, 1);
+showpages(&amp;quot;showMyGiftContent2&amp;quot;); }
+            else if (btnId == &amp;#39;btns3&amp;#39;) { if (pagesid == 1) { alert(&amp;quot;已经是第一页了&amp;quot;);
+return; }
 showGiftContent(itemsX, pagesid - 1); }
-            else if (btnId == &#39;btns4&#39;) { if (pagesid == totalPagesX) { alert(&quot;已经是最后一页了&quot;); return;
+            else if (btnId == &amp;#39;btns4&amp;#39;) { if (pagesid == totalPagesX) {
+alert(&amp;quot;已经是最后一页了&amp;quot;); return;
 } showGiftContent(itemsX, pagesid + 1); }
-            else if (btnText == &#39;积分兑换&#39;) {
+            else if (btnText == &amp;#39;积分兑换&amp;#39;) {
                 var idx = parseInt(btnId.match(/\d+(\.\d+)?/g)[0]) - 1;
-                if (jf &lt; Jf[idx]) { alert(&quot;积分不足&quot;); return; }
+                if (jf &amp;lt; Jf[idx]) { alert(&amp;quot;积分不足&amp;quot;); return; }
                 jf -= Jf[idx];
-                alert(&quot;成功兑换：【&quot; + S[idx] + &quot;】消耗：【&quot; + Jf[idx] + &quot;】积分&quot;);
+                alert(&amp;quot;成功兑换：【&amp;quot; + S[idx] + &amp;quot;】消耗：【&amp;quot; + Jf[idx] +
+&amp;quot;】积分&amp;quot;);
             }
-            else if (btnId == &#39;btnkq1&#39;) {
-                if (hlk &lt; 1) { alert(&quot;幻灵卡不足&quot;); return; } hlk -= 1; drawLottery(1, prizes2, nul);
+            else if (btnId == &amp;#39;btnkq1&amp;#39;) {
+                if (hlk &amp;lt; 1) { alert(&amp;quot;幻灵卡不足&amp;quot;); return; } hlk -= 1; drawLottery(1, prizes2, nul);
             }
-            else if (btnId == &#39;btnkq2&#39;) { if (hlk &lt; 10) { alert(&quot;幻灵卡不足&quot;); return; } hlk -= 10;
+            else if (btnId == &amp;#39;btnkq2&amp;#39;) { if (hlk &amp;lt; 10) { alert(&amp;quot;幻灵卡不足&amp;quot;);
+return; } hlk -= 10;
 drawLottery(10, prizes2, nul); }
-            else if (btnText == &#39;点击领取&#39;) {
+            else if (btnText == &amp;#39;点击领取&amp;#39;) {
                 var level = parseInt(btnId.match(/\d+(\.\d+)?/g)[0]) - 1;
-                if (level + 1 &lt;= 5) {//个人
-                    if (L_b[level] == 1) { alert(&quot;已经领取过了&quot;); return; }
-                    if (hlz &lt; Hl[level]) { alert(&quot;幻灵值不足&quot;); return; }
+                if (level + 1 &amp;lt;= 5) {//个人
+                    if (L_b[level] == 1) { alert(&amp;quot;已经领取过了&amp;quot;); return; }
+                    if (hlz &amp;lt; Hl[level]) { alert(&amp;quot;幻灵值不足&amp;quot;); return; }
                     drawLottery(1, prizesggs[level], PZX);
                     L_b[level] = 1;
                 }
                 else {//团队
-                    if (L_b[level] == 1) { alert(&quot;已经领取过了&quot;); return; }
-                    if (hlz &lt; Hl[level]) { alert(&quot;个人幻灵值不足&quot;); return; }
-                    if (hlzt &lt; H2[level]) { alert(&quot;团队幻灵值不足&quot;); return; }
+                    if (L_b[level] == 1) { alert(&amp;quot;已经领取过了&amp;quot;); return; }
+                    if (hlz &amp;lt; Hl[level]) { alert(&amp;quot;个人幻灵值不足&amp;quot;); return; }
+                    if (hlzt &amp;lt; H2[level]) { alert(&amp;quot;团队幻灵值不足&amp;quot;); return; }
                     drawLottery(1, prizesggs[level], PZX);
                     L_b[level] = 1;
                 }
             }
-            updateDisplay(&#39;keys&#39;, keys);
-            updateDisplay(&#39;jf&#39;, jf);
-            updateDisplay(&#39;hlz1&#39;, hlz);
-            updateDisplay(&#39;hlz2&#39;, hlz);
+            updateDisplay(&amp;#39;keys&amp;#39;, keys);
+            updateDisplay(&amp;#39;jf&amp;#39;, jf);
+            updateDisplay(&amp;#39;hlz1&amp;#39;, hlz);
+            updateDisplay(&amp;#39;hlz2&amp;#39;, hlz);
             hlzt = hlz + parseInt(hlz * 0.8) * 5;
-            updateDisplay(&#39;hlzt&#39;, hlzt);
-            updateDisplay(&#39;hlk&#39;, hlk);
+            updateDisplay(&amp;#39;hlzt&amp;#39;, hlzt);
+            updateDisplay(&amp;#39;hlk&amp;#39;, hlk);
 
         }
         //////////////////////////PTTS//////////////////////////
@@ -649,26 +665,26 @@ drawLottery(10, prizes2, nul); }
   <script src="https://act.daoju.qq.com/act/a20231223cfvastsky/js/config_v1.js"></script> 
   <script src="./index.js"></script> 
   <script type="text/javascript">
-        $(&quot;.btn_box3 a&quot;).on(&quot;click&quot;, function () {
-            if ($(this).hasClass(&quot;cur&quot;)) {
+        $(&amp;quot;.btn_box3 a&amp;quot;).on(&amp;quot;click&amp;quot;, function () {
+            if ($(this).hasClass(&amp;quot;cur&amp;quot;)) {
                 return;
             }
-            $(&quot;.btn_box3 a&quot;).removeClass(&#39;cur&#39;);
-            $(this).addClass(&#39;cur&#39;);
-            $(&#39;.box7ct1&#39;).hide();
-            $(&#39;.box7ct1&#39;).eq($(this).index()).show();
+            $(&amp;quot;.btn_box3 a&amp;quot;).removeClass(&amp;#39;cur&amp;#39;);
+            $(this).addClass(&amp;#39;cur&amp;#39;);
+            $(&amp;#39;.box7ct1&amp;#39;).hide();
+            $(&amp;#39;.box7ct1&amp;#39;).eq($(this).index()).show();
         })
-        $(&quot;.btn_gb&quot;).on(&quot;click&quot;, function () {
-            $(&#39;.fc&#39;).hide();
+        $(&amp;quot;.btn_gb&amp;quot;).on(&amp;quot;click&amp;quot;, function () {
+            $(&amp;#39;.fc&amp;#39;).hide();
         })
         /*弹窗*/
         function TGDialogS(e) {
             // 利用milo库引入dialog组件
-            need(&quot;biz.dialog&quot;, function (Dialog) {
+            need(&amp;quot;biz.dialog&amp;quot;, function (Dialog) {
                 Dialog.show({
                     id: e,
-                    bgcolor: &#39;#000&#39;,
-//弹出“遮罩”的颜色，格式为&quot;#FF6600&quot;，可修改，默认为&quot;#fff&quot;
+                    bgcolor: &amp;#39;#000&amp;#39;,
+//弹出“遮罩”的颜色，格式为&amp;quot;#FF6600&amp;quot;，可修改，默认为&amp;quot;#fff&amp;quot;
                     opacity: 60 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
                 });
             });
