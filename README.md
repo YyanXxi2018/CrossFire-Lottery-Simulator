@@ -5,6 +5,14 @@ README
 
 ****
 
+|#|目录|
+|---|----|
+|1|[CF抽奖模拟器](https://yyanxxi2018.github.io/CrossFire-Lottery-Simulator/) |
+|2|[幻灵抽奖模拟器](https://yyanxxi2018.github.io/CrossFire-Lottery-Simulator/huanling/) |
+|3|[枪娘抽奖模拟器](https://yyanxxi2018.github.io/CrossFire-Lottery-Simulator/qiangniang/) |
+|4|[隼(非官方概率)模拟器](https://yyanxxi2018.github.io/CrossFire-Lottery-Simulator/sun/) |
+
+
 ## 幻灵抽奖
 
 抽奖概率-拼团
