@@ -1,0 +1,1025 @@
+<html>
+
+
+<head>
+    <link rel="icon" href="https://daoju.qq.com/favicon.ico" type="image/x-icon">
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <!-- 弹窗内容 -->
+        <h3>抽中的物品：</h3>
+        <ul id="prizeList"></ul>
+        <button onclick="hidePopup();">关闭</button>
+        <h3>(仅供参考)</h3>
+    </div>
+    <div class="overlay" id="overlay1"></div>
+    <div class="popup" id="popup1">
+        <!-- 弹窗内容 -->
+        <h3>恭喜你获得：</h3>
+        <ul id="prizeList1"></ul>
+        <button onclick="hidePopup1();">关闭</button>
+        <h3>(仅供参考)</h3>
+    </div>
+    <meta charset="UTF-8" />
+    <meta content="all" name="robots">
+    <meta content="Tencent-CP" name="author" />
+    <meta content="Tencent" name="Copyright" />
+    <title>穿越火线-枪娘暗刃&默登场-穿越火线官方网站-腾讯游戏</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+<body>
+    <div class="wrap1">
+        <class="container">
+            <div class="box1">
+                <h2 class="tit1 sp db">枪娘抽奖</h2>
+                <div class="btnbox">
+                    <a href="javascript:void ()" class="btnbuy1 sp"
+                        onclick="PTTSendClickX('btn','btnbuy1','购买');"></a><!--添加类名on数字隐藏-->
+                    <a href="javascript:void ()" class="btnbuy2 sp" onclick="PTTSendClickX('btn','btnbuy2','购买');"></a>
+                    <a href="javascript:void ()" class="btnbuy3 sp"
+                        onclick="PTTSendClickX('btn','btnbuy3','购买');"></a><!--添加类名on数字隐藏-->
+                </div>
+
+                <div class="boxlottery">
+                    <ul class="listlot">
+                        <li><img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot1.png" alt="" />
+                            <p class="lotname">觉醒版 QBZ-03-王者蔷薇</p>
+                        </li>
+                        <li><img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot2.png" alt="" />
+                            <p class="lotname">王者-春</p>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot3.png" alt="" />
+                            <p class="lotname">星神-枪娘默 皮肤（不可交易）</p>
+                            <span class="tagesbq tagesbq1 sp">全新首发</span>
+                            <span class="tagesbq tagesbq2 sp">枪娘限定</span>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot4.png" alt="" />
+                            <p class="lotname">斯泰尔-枪娘暗刃</p>
+                            <span class="tagesbq tagesbq1 sp">全新首发</span>
+                            <span class="tagesbq tagesbq2 sp">枪娘限定</span>
+                        </li>
+                        <li><img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot5.png" alt="" />
+                            <p class="lotname">毁灭耀金皮肤（不可交易）</p>
+                        </li>
+                        <li><img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot6.png" alt="" />
+                            <p class="lotname">积分x3</p>
+                        </li>
+                        <li><img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot7.png" alt="" />
+                            <p class="lotname">裁决-雪莉杨</p>
+                        </li>
+                        <li><img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot8.png" alt="" />
+                            <p class="lotname">积分x4</p>
+                        </li>
+                        <li><img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot9.png" alt="" />
+                            <p class="lotname">Barrett-极光</p>
+                        </li>
+                        <li><img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot10.png" alt="" />
+                            <p class="lotname">积分x6</p>
+                        </li>
+                        <li><img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot11.png" alt="" />
+                            <p class="lotname">M4A1-黑骑士</p>
+                        </li>
+
+                        <li><img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot12.png" alt="" />
+                            <p class="lotname">积分x12</p>
+                        </li>
+                        <li><img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot13.png" alt="" />
+                            <p class="lotname">积分x100</p>
+                        </li>
+                        <li><img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot14.png" alt="" />
+                            <p class="lotname">王者之石x1</p>
+                        </li>
+                        <li><img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot15.png" alt="" />
+                            <p class="lotname">天使灵狐玩偶（不可交易）</p>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/lot16.png" alt="" />
+                            <p class="lotname">枪娘阿敏玩偶（不可交易）</p>
+                            <span class="tagesbq tagesbq1 sp">全新首发</span>
+                            <span class="tagesbq tagesbq2 sp">枪娘限定</span>
+                        </li>
+                    </ul>
+                    <p class="lottxt2">剩余钥匙：<span class="jf_6048" id="keysDisplay">0</span></p>
+                    <div class="btnlotbx">
+                        <a href="javascript:void ()" class="btnlot1 sp db"
+                            onclick="PTTSendClickX('btn','btnlot1','抽一次');">抽一次</a>
+                        <a href="javascript:void ()" class="btnlot2 sp db"
+                            onclick="PTTSendClickX('btn','btnlot2','抽十次');">抽十次</a>
+
+                    </div>
+                </div>
+
+                <div class="boxzcmd">
+                    <div class="boxzcmdin">
+                        <div class="boxzcmdin_lf">
+                            <h3 class="tita sp db">暂存箱</h3>
+                            <a href="javascript:void ()" class="btnzcx sp db" onclick="startDisplayX();">暂存箱</a>
+                            <p class="txt_zcx">抽奖获得的可分解道具进入暂存箱, <br />其余道具直接发往游戏内</p>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/zcx.png" alt=""
+                                class="piczcx" />
+                        </div>
+                        <div class="boxzcmdin_mid sp"></div>
+                        <div class="boxzcmdin_rig">
+                            <h3 class="titb sp db"></h3>
+                            <div class="boxzcrig" id="milo-broadcast">
+                                <ul class="listmd" id="milo-broadcast-container">
+
+                                </ul>
+                            </div>
+                            <script id="milo-broadcast-tpl" type="text/html">
+							{@ for(var i = 0; i < data.length; i++) { @}
+							<li>
+								恭喜玩家 {{data[i].iUin ? data[i].iUin :'xxxx'}} 获得了：{{data[i].sPackageName ?
+								data[i].sPackageName : ''}}
+							</li>
+							{@ } @}
+						</script>
+                        </div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <h2 class="tit2 sp db">积分兑换</h2>
+                    <p class="txtsyjf">剩余积分：<span class="jf_6049" id="jfDisplay">0</span></p>
+                    <ul class="listdh">
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/dhdj1.png" alt="" />
+                            <p class="dhname">觉醒版 QBZ-03-王者蔷薇</p>
+                            <a href="javascript:void ()" class="btndhuanh sp"
+                                onclick="PTTSendClickX('btn','btndhuanh1','积分兑换');">588积分兑换</a>
+                            <!--					<a href= "javascript:void ()"  href="javascript:amsExchange(1);" class="btndhuanh sp" onclick="PTTSendClickX('btn','btndhuanh1','积分兑换');">xxx积分兑换</a>-->
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/dhdj2.png" alt="" />
+                            <p class="dhname">王者-春</p>
+                            <a href="javascript:void ()" class="btndhuanh sp"
+                                onclick="PTTSendClickX('btn','btndhuanh2','积分兑换');">488积分兑换</a>
+                            <!--					<a href= "javascript:void ()"  href="javascript:amsExchange(2);" class="btndhuanh sp" onclick="PTTSendClickX('btn','btndhuanh2','积分兑换');">xxx积分兑换</a>-->
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/dhdj3.png" alt="" />
+                            <p class="dhname">星神-枪娘默 皮肤（不可交易）</p>
+                            <a href="javascript:void ()" class="btndhuanh sp"
+                                onclick="PTTSendClickX('btn','btndhuanh3','积分兑换');">488积分兑换</a>
+                            <!--					<a href= "javascript:void ()"  href="javascript:amsExchange(2);" class="btndhuanh sp" onclick="PTTSendClickX('btn','btndhuanh2','积分兑换');">xxx积分兑换</a>-->
+                            <span class="tagesbq tagesbq1 sp">全新首发</span>
+                            <span class="tagesbq tagesbq2 sp">枪娘限定</span>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/dhdj4.png" alt="" />
+                            <p class="dhname">斯泰尔-枪娘暗刃</p>
+                            <a href="javascript:void ()" class="btndhuanh sp"
+                                onclick="PTTSendClickX('btn','btndhuanh4','积分兑换');">388积分兑换</a>
+                            <!--					<a href= "javascript:void ()"  href="javascript:amsExchange(2);" class="btndhuanh sp" onclick="PTTSendClickX('btn','btndhuanh2','积分兑换');">xxx积分兑换</a>-->
+                            <span class="tagesbq tagesbq1 sp">全新首发</span>
+                            <span class="tagesbq tagesbq2 sp">枪娘限定</span>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/dhdj5.png" alt="" />
+                            <p class="dhname">毁灭耀金皮肤（不可交易）</p>
+                            <a href="javascript:void ()" class="btndhuanh sp"
+                                onclick="PTTSendClickX('btn','btndhuanh5','积分兑换');">288积分兑换</a>
+                            <!--					<a href= "javascript:void ()"  href="javascript:amsExchange(2);" class="btndhuanh sp" onclick="PTTSendClickX('btn','btndhuanh2','积分兑换');">xxx积分兑换</a>-->
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/dhdj6.png" alt="" />
+                            <p class="dhname">裁决-雪莉杨</p>
+                            <a href="javascript:void ()" class="btndhuanh sp"
+                                onclick="PTTSendClickX('btn','btndhuanh6','积分兑换');">288积分兑换</a>
+                            <!--					<a href= "javascript:void ()"  href="javascript:amsExchange(2);" class="btndhuanh sp" onclick="PTTSendClickX('btn','btndhuanh2','积分兑换');">xxx积分兑换</a>-->
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/dhdj7.png" alt="" />
+                            <p class="dhname">Barrett-极光</p>
+                            <a href="javascript:void ()" class="btndhuanh sp"
+                                onclick="PTTSendClickX('btn','btndhuanh7','积分兑换');">188积分兑换</a>
+                            <!--					<a href= "javascript:void ()"  href="javascript:amsExchange(2);" class="btndhuanh sp" onclick="PTTSendClickX('btn','btndhuanh2','积分兑换');">xxx积分兑换</a>-->
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/dhdj8.png" alt="" />
+                            <p class="dhname">M4A1-黑骑士</p>
+                            <a href="javascript:void ()" class="btndhuanh sp"
+                                onclick="PTTSendClickX('btn','btndhuanh8','积分兑换');">188积分兑换</a>
+                            <!--					<a href= "javascript:void ()"  href="javascript:amsExchange(2);" class="btndhuanh sp" onclick="PTTSendClickX('btn','btndhuanh2','积分兑换');">xxx积分兑换</a>-->
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/dhdj9.png" alt="" />
+                            <p class="dhname">枪娘阿敏玩偶（不可交易）</p>
+                            <a href="javascript:void ()" class="btndhuanh sp"
+                                onclick="PTTSendClickX('btn','btndhuanh9','积分兑换');">128积分兑换</a>
+                            <!--					<a href= "javascript:void ()"  href="javascript:amsExchange(2);" class="btndhuanh sp" onclick="PTTSendClickX('btn','btndhuanh2','积分兑换');">xxx积分兑换</a>-->
+                            <span class="tagesbq tagesbq1 sp">全新首发</span>
+                            <span class="tagesbq tagesbq2 sp">枪娘限定</span>
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/dhdj10.png" alt="" />
+                            <p class="dhname">天使灵狐玩偶（不可交易）</p>
+                            <a href="javascript:void ()" class="btndhuanh sp"
+                                onclick="PTTSendClickX('btn','btndhuanh10','积分兑换');">88积分兑换</a>
+                            <!--					<a href= "javascript:void ()"  href="javascript:amsExchange(2);" class="btndhuanh sp" onclick="PTTSendClickX('btn','btndhuanh2','积分兑换');">xxx积分兑换</a>-->
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/dhdj11.png" alt="" />
+                            <p class="dhname">属性变更券x5</p>
+                            <a href="javascript:void ()" class="btndhuanh sp"
+                                onclick="PTTSendClickX('btn','btndhuanh11','积分兑换');">10积分兑换</a>
+                            <!--					<a href= "javascript:void ()"  href="javascript:amsExchange(2);" class="btndhuanh sp" onclick="PTTSendClickX('btn','btndhuanh2','积分兑换');">xxx积分兑换</a>-->
+                        </li>
+                        <li>
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/dhdj12.png" alt="" />
+                            <p class="dhname">交易专用钥匙x1</p>
+                            <a href="javascript:void ()" class="btndhuanh sp"
+                                onclick="PTTSendClickX('btn','btndhuanh12','积分兑换');">4积分兑换</a>
+                            <!--					<a href= "javascript:void ()"  href="javascript:amsExchange(2);" class="btndhuanh sp" onclick="PTTSendClickX('btn','btndhuanh2','积分兑换');">xxx积分兑换</a>-->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="bx3_in">
+                    <h2 class="tit3 sp db">许愿池</h2>
+                    <p class="titdntxt">许愿获得道具不进暂存箱直接发往游戏内</p>
+                    <p class="txtsyjf">剩余许愿币：<span class="jf_6050" id="xybDisplay">0</span></p>
+                    <ul class="listwish">
+                        <li class="lifrist">
+                            <div class="bxlfpic">
+                                <img class="ig5"
+                                    src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic5_2.png" alt=""
+                                    id="xyw1" />
+                                <p class="whisname sp ig5name" id="n1">王者-春</p>
+                            </div>
+                            <div class="bxwhisrig">
+                                <a href="javascript:void ()" class="btnchangeyw sp"
+                                    onclick="PTTSendClickX('btn','btnchangeyw1','更换愿望');">更换愿望</a>
+                                <p class="levtxt">5级愿望</p>
+                                <p class="vyzhinum">所需许愿值236</p>
+                                <p class="currxynum">当前许愿值：<span class="jf_6059" id="xyzDisplay1">0</span></p>
+                                <div class="bxyxbtn">
+                                    <a href="javascript:void ()" class="btntbi sp"
+                                        onclick="PTTSendClickX('btn','btnchangeyw1','投入1许愿币');">投入1许愿币</a>
+                                    <a href="javascript:void ()" class="btngetyxw sp"
+                                        onclick="PTTSendClickX('btn','btnchangeyw1','领取');">领取</a>
+                                </div>
+                            </div>
+                            <div class="boxfc" style="display: none;" id="xy1">
+                                <a href="javascript:void ()" class="btnxuanz btnxuanz_5_2"
+                                    onclick="PTTSendClickX('btn','gh1','更换');">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic5_2.png"
+                                        alt="" />
+                                    <i class="currxuanz sp"></i>
+                                    <span class="textnmdj">王者-春</span>
+                                </a>
+                                <a href="javascript:void ()" class="btnxuanz btnxuanz_5_1"
+                                    onclick="PTTSendClickX('btn','gh2','更换');">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic5_1.png"
+                                        alt="" />
+                                    <i class="currxuanz sp"></i>
+                                    <span class="textnmdj">觉醒版 QBZ-03-王者蔷薇</span>
+                                </a>
+                                <span class="gunbifc"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bxlfpic">
+                                <img class="ig4"
+                                    src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic4_2.png" alt=""
+                                    id="xyw2" />
+                                <p class="whisname sp ig4name" id="n2">斯泰尔-枪娘暗刃</p>
+                                <div class="bxtagsmbq">
+                                    <span class="tagsmbq sp txtwish txtwish4_1 txtwish4_2">全新首发</span>
+                                    <span class="tagsmbq sp txtwish txtwish4_1 txtwish4_2">枪娘限定</span>
+                                </div>
+                            </div>
+                            <div class="bxwhisrig">
+                                <a href="javascript:void ()" class="btnchangeyw sp"
+                                    onclick="PTTSendClickX('btn','btnchangeyw2','更换愿望');">更换愿望</a>
+                                <p class="levtxt">4级愿望</p>
+                                <p class="vyzhinum">所需许愿值198</p>
+                                <p class="currxynum">当前许愿值：<span class="jf_6058" id="xyzDisplay2">0</span></p>
+                                <div class="bxyxbtn">
+                                    <a href="javascript:void ()" class="btntbi sp"
+                                        onclick="PTTSendClickX('btn','btnchangeyw2','投入1许愿币');">投入1许愿币</a>
+                                    <a href="javascript:void ()" class="btngetyxw sp"
+                                        onclick="PTTSendClickX('btn','btnchangeyw2','领取');">领取</a>
+                                </div>
+                            </div>
+                            <div class="boxfc" style="display: none;" id="xy2">
+                                <a href="javascript:void ()" class="btnxuanz btnxuanz_4_2"
+                                    onclick="PTTSendClickX('btn','gh3','更换');">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic4_2.png"
+                                        alt="" />
+                                    <i class="currxuanz sp"></i>
+                                    <span class="textnmdj">斯泰尔-枪娘暗刃</span>
+                                    <div class="bxtagsmbq bxtagsmbq1">
+                                        <span class="tagsmbq sp">全新首发</span>
+                                        <span class="tagsmbq sp">枪娘限定</span>
+                                    </div>
+                                </a>
+                                <a href="javascript:void ()" class="btnxuanz btnxuanz_4_1"
+                                    onclick="PTTSendClickX('btn','gh4','更换');">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic4_1.png"
+                                        alt="" />
+                                    <i class="currxuanz sp"></i>
+                                    <span class="textnmdj">星神-枪娘默 皮肤(不可交易)</span>
+                                    <div class="bxtagsmbq bxtagsmbq1">
+                                        <span class="tagsmbq sp">全新首发</span>
+                                        <span class="tagsmbq sp">枪娘限定</span>
+                                    </div>
+                                </a>
+                                <span class="gunbifc"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bxlfpic">
+                                <img class="ig3"
+                                    src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic3_1.png" alt=""
+                                    id="xyw3" />
+                                <p class="whisname sp ig3name" id="n3">毁灭耀金皮肤(不可交易)</p>
+                            </div>
+                            <div class="bxwhisrig">
+                                <a href="javascript:void ()" class="btnchangeyw sp"
+                                    onclick="PTTSendClickX('btn','btnchangeyw3','更换愿望');">更换愿望</a>
+                                <p class="levtxt">3级愿望</p>
+                                <p class="vyzhinum">所需许愿值118</p>
+                                <p class="currxynum">当前许愿值：<span class="jf_6057" id="xyzDisplay3">0</span></p>
+                                <div class="bxyxbtn">
+                                    <a href="javascript:void ()" class="btntbi sp"
+                                        onclick="PTTSendClickX('btn','btnchangeyw3','投入1许愿币');">投入1许愿币</a>
+                                    <a href="javascript:void ()" class="btngetyxw sp"
+                                        onclick="PTTSendClickX('btn','btnchangeyw3','领取');">领取</a>
+                                </div>
+                            </div>
+                            <div class="boxfc" style="display: none;" id="xy3">
+                                <a href="javascript:void ()" class="btnxuanz btnxuanz_3_2"
+                                    onclick="PTTSendClickX('btn','gh5','更换');">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic3_2.png"
+                                        alt="" />
+                                    <i class="currxuanz sp"></i>
+                                    <span class="textnmdj">裁决-雪莉杨</span>
+                                </a>
+                                <a href="javascript:void ()" class="btnxuanz btnxuanz_3_1"
+                                    onclick="PTTSendClickX('btn','gh6','更换');">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic3_1.png"
+                                        alt="" />
+                                    <i class="currxuanz sp"></i>
+                                    <span class="textnmdj">毁灭耀金皮肤（不可交易）</span>
+                                </a>
+                                <span class="gunbifc"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bxlfpic">
+                                <img class="ig2"
+                                    src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic2_2.png" alt=""
+                                    id="xyw4" />
+                                <p class="whisname sp ig2name" id="n4">M4A1-黑骑士</p>
+                            </div>
+                            <div class="bxwhisrig">
+                                <a href="javascript:void ()" class="btnchangeyw sp"
+                                    onclick="PTTSendClickX('btn','btnchangeyw4','更换愿望');">更换愿望</a>
+                                <p class="levtxt">2级愿望</p>
+                                <p class="vyzhinum">所需许愿值78</p>
+                                <p class="currxynum">当前许愿值：<span class="jf_6056" id="xyzDisplay4">0</span></p>
+                                <div class="bxyxbtn">
+                                    <a href="javascript:void ()" class="btntbi sp"
+                                        onclick="PTTSendClickX('btn','btnchangeyw4','投入1许愿币');">投入1许愿币</a>
+                                    <a href="javascript:void ()" class="btngetyxw sp"
+                                        onclick="PTTSendClickX('btn','btnchangeyw4','领取');">领取</a>
+                                </div>
+                            </div>
+                            <div class="boxfc" style="display: none;" id="xy4">
+                                <a href="javascript:void ()" class="btnxuanz btnxuanz_2_2"
+                                    onclick="PTTSendClickX('btn','gh7','更换');">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic2_2.png"
+                                        alt="" />
+                                    <i class="currxuanz sp"></i>
+                                    <span class="textnmdj">M4A1-黑骑士</span>
+                                </a>
+                                <a href="javascript:void ()" class="btnxuanz btnxuanz_2_1"
+                                    onclick="PTTSendClickX('btn','gh8','更换');">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic2_1.png"
+                                        alt="" />
+                                    <i class="currxuanz sp"></i>
+                                    <span class="textnmdj">Barrett-极光</span>
+                                </a>
+                                <span class="gunbifc"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bxlfpic">
+                                <img class="ig1"
+                                    src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic1_1.png" alt=""
+                                    id="xyw5" />
+                                <p class="whisname sp ig1name" id="n5">枪娘阿敏玩偶（不可交易）</p>
+                                <div class="bxtagsmbq">
+                                    <span class="tagsmbq sp txtwish txtwish1_1">全新首发</span>
+                                    <span class="tagsmbq sp txtwish txtwish1_1">枪娘限定</span>
+                                </div>
+                            </div>
+                            <div class="bxwhisrig">
+                                <a href="javascript:void ()" class="btnchangeyw sp"
+                                    onclick="PTTSendClickX('btn','btnchangeyw5','更换愿望');">更换愿望</a>
+                                <p class="levtxt">1级愿望</p>
+                                <p class="vyzhinum">所需许愿值58</p>
+                                <p class="currxynum">当前许愿值：<span class="jf_6055" id="xyzDisplay5">0</span></p>
+                                <div class="bxyxbtn">
+                                    <a href="javascript:void ()" class="btntbi sp"
+                                        onclick="PTTSendClickX('btn','btnchangeyw5','投入1许愿币');">投入1许愿币</a>
+                                    <a href="javascript:void ()" class="btngetyxw sp"
+                                        onclick="PTTSendClickX('btn','btnchangeyw5','领取');">领取</a>
+                                </div>
+                            </div>
+                            <div class="boxfc" style="display: none;" id="xy5">
+                                <a href="javascript:void ()" class="btnxuanz btnxuanz1 btnxuanz_1_2"
+                                    onclick="PTTSendClickX('btn','gh9','更换');">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic1_2.png"
+                                        alt="" />
+                                    <i class="currxuanz sp"></i>
+                                    <span class="textnmdj">天使灵狐玩偶（不可交易）</span>
+                                </a>
+                                <a href="javascript:void ()" class="btnxuanz btnxuanz2 btnxuanz_1_1"
+                                    onclick="PTTSendClickX('btn','gh10','更换');">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/xypic1_1.png"
+                                        alt="" />
+                                    <i class="currxuanz sp"></i>
+                                    <span class="textnmdj">枪娘阿敏玩偶（不可交易）</span>
+                                    <div class="bxtagsmbq bxtagsmbq1">
+                                        <span class="tagsmbq sp">全新首发</span>
+                                        <span class="tagsmbq sp">枪娘限定</span>
+                                    </div>
+                                </a>
+                                <span class="gunbifc"></span>
+
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+    </div>
+    <div class="pop pop6" id="popJl"
+        style="display: block; visibility: hidden; position: fixed; z-index: 9999; left: 50%; top: 50%; margin-top: -261px; margin-left: -312px;">
+        <h2 class="pop_tit4 popsp db">中奖信息</h2>
+        <p class="p_tips">抽奖过程中请勿刷新页面或中断，请以实际礼包记录为准。</p>
+        <div class="zj_info" id="choulist">
+
+        </div>
+        <p class="poplottxt">
+            1.虚拟道具奖品将在24小时内发到游戏仓库；<br>
+            2.可分解奖品将发到暂存箱进行领取或分解；<br>
+            3.积分在本页面查看；<br>
+            4.由于数据量巨大，奖品道具显示将有所延迟，或可存在不展示情况，请以礼包记录为准，谢谢您的理解与支持。
+        </p>
+        <a class="dia-close db popsp" href="javascript:hiddenpages('popJl');" title="关闭">×</a>
+    </div>
+
+    <div class="pop pop4" id="popdc"
+        style="display: block; visibility: hidden; position: fixed; z-index: 9999; left: 50%; top: 50%; margin-top: -261px; margin-left: -312px;">
+        <h2 class="pop_tit4 popsp db">中奖信息</h2>
+        <p class="p_tips">抽奖过程中请勿刷新页面或中断，请以实际礼包记录为准。</p>
+        <div class="zj_info pop_list">
+            <p id="jlname">xxxxxxxxxxxxxxxxx</p>
+        </div>
+        <p class="poplottxt">
+            1.虚拟道具奖品将在24小时内发到游戏仓库；<br>
+            2.可分解奖品将发到暂存箱进行领取或分解；<br>
+            3.积分在本页面查看；<br>
+            4.由于数据量巨大，奖品道具显示将有所延迟，或可存在不展示情况，请以礼包记录为准，谢谢您的理解与支持。
+        </p>
+        <a class="dia-close db popsp" href="javascript:hiddenpages('popdc');" title="关闭">×</a>
+    </div>
+    <div class="pop_z" id="showMyGiftContent">
+        <h1 style="text-align: center;">暂存箱</h1>
+        <div class="items-container_z" id="itemsContainer">
+            <!-- Items will be dynamically added here -->
+        </div>
+        <div class="pagination_z" id="paginationContainer">
+
+        </div>
+        <button class="dia-close_z" onclick="closeDisplayX()">关闭</button>
+    </div>
+
+    <div class="pop pop2 pop3" id="showMyGiftContent2" data-milodialog="1" role="dialog" tabindex="-1"
+        style="display: block; visibility: hidden; position: fixed; z-index: 9999; left: 50%; top: 50%; margin-top: -292px; margin-left: -354px;">
+        <div class="dia-con-1 c">
+            <div class="dia-con-a">
+                <h3 class="pop_tit_zc popsp db poptitmid">暂存箱</h3>
+                <div class="bgtable1">
+                    <table class="poptable2">
+                        <tbody id="milo-lotteryRecordContainer1">>
+                            <tr>
+                                <th class="wd118">名称</th>
+                                <th class="wd126">领取道具</th>
+                                <th class="wd124">分解为钥匙</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="dia-con-b">
+                <h3 class="pop_tit_wqfj popsp db">武器分解表</h3>
+                <div class="poptable3">
+                    <h4><span>道具名称</span><span>分解所获钥匙</span></h4>
+                    <div class="table_con2">
+                        <p><span>觉醒版 QBZ-03-王者蔷薇</span><span>12</span></p>
+                        <p><span>王者-春</span><span>10</span></p>
+                        <p><span>星神-枪娘默 皮肤（不可交易）</span><span>10</span></p>
+                        <p><span>斯泰尔-枪娘暗刃</span><span>8</span></p>
+                        <p><span>毁灭耀金皮肤（不可交易）</span><span>6</span></p>
+                        <p><span>裁决-雪莉杨</span><span>6</span></p>
+                        <p><span>Barrett-极光</span><span>4</span></p>
+                        <p><span>M4A1-黑骑士</span><span>4</span></p>
+                        <p><span>枪娘阿敏玩偶（不可交易）</span><span>3</span></p>
+                        <p><span>天使灵狐玩偶（不可交易）</span><span>2</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page_box milo-paginator" id="milo-paginator2" style="display: block;">
+        </div>
+        <p class="poptxttip1">温馨提示：虚拟道具奖品将在24小时内发到您的游戏仓库。</p>
+        <a class="dia-close db popsp" href="javascript:hiddenpages('showMyGiftContent2');" title="关闭">×</a>
+    </div>
+
+    <script>
+
+        //暂存箱start
+        // Sample array of items
+        var itemsX = [];
+        const items_b = [];//看是否发送或分解 0无 1发送 2分解
+        var pagesid = 1;
+        var PZX = ['觉醒版 QBZ-03-王者蔷薇', '王者-春', '星神-枪娘默 皮肤（不可交易）', '斯泰尔-枪娘暗刃', '毁灭耀金皮肤（不可交易）', '裁决-雪莉杨', 'Barrett-极光', 'M4A1-黑骑士', '枪娘阿敏玩偶（不可交易）', '天使灵狐玩偶（不可交易）'];
+        const sitem = [
+            ['觉醒版 QBZ-03-王者蔷薇', 12],
+            ['王者-春', 10],
+            ['星神-枪娘默 皮肤（不可交易）', 10],
+            ['斯泰尔-枪娘暗刃', 8],
+            ['毁灭耀金皮肤（不可交易）', 6],
+            ['裁决-雪莉杨', 6],
+            ['Barrett-极光', 4],
+            ['M4A1-黑骑士', 4],
+            ['枪娘阿敏玩偶（不可交易）', 3],
+            ['天使灵狐玩偶（不可交易）', 2],
+        ];
+        var keys = 0, jf = 0, xyb = 0;
+        function startDisplayX() {
+            // 获取弹窗元素
+            var popup = document.getElementById('showMyGiftContent2');
+
+            // 设置弹窗可见性
+            if (popup) {
+                popup.style.visibility = "visible";
+            }
+            showGiftContent(itemsX, 1);
+        }
+
+        function showGiftContent(items, currentPage) {
+            pagesid = currentPage;
+            var container = document.getElementById('showMyGiftContent2');
+            var tableContainer = container.querySelector('.bgtable1');
+            var paginatorContainer = container.querySelector('#milo-paginator2');
+
+            console.log(tableContainer);
+            // 清空现有内容
+            tableContainer.innerHTML = '';
+            paginatorContainer.innerHTML = '';
+
+            var itemsPerPage = 8;
+            var totalPages = Math.ceil(items.length / itemsPerPage);
+
+            // 创建表格
+            var table = document.createElement('table');
+            table.classList.add('poptable2');
+            tableContainer.appendChild(table);
+
+            // 创建表头
+            var thead = document.createElement('thead');
+            var headerRow = document.createElement('tr');
+            var nameHeader = document.createElement('th');
+            nameHeader.textContent = '名称';
+            var receiveHeader = document.createElement('th');
+            receiveHeader.textContent = '领取道具';
+            var decomposeHeader = document.createElement('th');
+            decomposeHeader.textContent = '分解钥匙';
+
+            headerRow.appendChild(nameHeader);
+            headerRow.appendChild(receiveHeader);
+            headerRow.appendChild(decomposeHeader);
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+
+            // 创建表体
+            // 创建新的tbody
+            var tbody = document.createElement('tbody');
+            table.appendChild(tbody);
+
+            var start = (currentPage - 1) * itemsPerPage;
+            var end = Math.min(start + itemsPerPage, items.length);
+
+            for (var i = start; i < end; i++) {
+                // 创建表格行和单元格
+                var row = document.createElement('tr');
+                var itemNameCell = document.createElement('td');
+                itemNameCell.textContent = items[i];
+                var receiveItemCell = document.createElement('td');
+
+
+                var decomposeItemCell = document.createElement('td');
+                if (items_b[i] == 0) {
+                    receiveItemCell.innerHTML = '<a href="javascript:fs(' + (i) + ');" style="color: white;">[发送]</a>';
+                    decomposeItemCell.innerHTML = '<a href="javascript:fj(' + (i) + ');" style="color: white;">[分解]</a>';
+                } else if (items_b[i] == 1) {
+                    receiveItemCell.innerHTML = '<a href="javascript:void();" style="color: white;">[已发送]</a>';
+                    decomposeItemCell.innerHTML = '<a href="javascript:void();" style="color: white;">[分解]</a>';
+                } else if (items_b[i] == 2) {
+                    receiveItemCell.innerHTML = '<a href="javascript:void();" style="color: white;">[发送]</a>';
+                    decomposeItemCell.innerHTML = '<a href="javascript:void();" style="color: white;">[已分解]</a>';
+                }
+
+                // 将单元格添加到行
+                row.appendChild(itemNameCell);
+                row.appendChild(receiveItemCell);
+                row.appendChild(decomposeItemCell);
+
+                // 将行添加到tbody
+                tbody.appendChild(row);
+            }
+
+            // 创建页面导航按钮
+            for (var page = 1; page <= totalPages; page++) {
+                var pageButton = document.createElement('button');
+                pageButton.textContent = page;
+
+                // 使用立即调用函数表达式(IIFE)来保留page的值
+                (function (currentPage) {
+                    pageButton.addEventListener('click', function () {
+                        showGiftContent(items, currentPage);
+                    });
+                })(page);
+
+                paginatorContainer.appendChild(pageButton);
+            }
+        }
+
+
+        function showpages(st) {
+            // 获取弹窗元素
+            var popup = document.getElementById(st);
+
+            // 设置弹窗可见性
+            if (popup) {
+                popup.style.visibility = "visible";
+            }
+        }
+        function hiddenpages(st) {
+            // 获取弹窗元素
+            var popup = document.getElementById(st);
+
+            // 设置弹窗可见性
+            if (popup) {
+                popup.style.visibility = "hidden";
+            }
+        }
+        function fs(id) {
+            alert('【' + itemsX[id] + '】' + '已发送到仓库');
+            items_b[id] = 1;
+            showGiftContent(itemsX, pagesid);
+        }
+        function fj(id) {
+
+            const sitemMap = new Map(sitem);
+
+            alert('【' + itemsX[id] + '】' + '分解成功获得钥匙*' + sitemMap.get(itemsX[id]));
+            keys += sitemMap.get(itemsX[id]);
+
+            updateDisplay("keysDisplay", keys);
+            items_b[id] = 2;
+            showGiftContent(itemsX, pagesid);
+        }
+
+        var imgElement1 = document.getElementById('imgElement1');
+        var S = [['王者-春', '觉醒版 QBZ-03-王者蔷薇'], ['斯泰尔-枪娘暗刃', '星神-枪娘默 皮肤（不可交易）'], ['裁决-雪莉杨', '毁灭耀金皮肤（不可交易）'], ['M4A1-黑骑士', 'Barrett-极光'], ['天使灵狐玩偶（不可交易）', '枪娘阿敏玩偶（不可交易）']];
+        var ssrc = [['xypic5_2.png', 'xypic5_1.png'], ['xypic4_2.png', 'xypic4_1.png'], ['xypic3_2.png', 'xypic3_1.png'], ['xypic2_2.png', 'xypic2_1.png'], ['xypic1_2.png', 'xypic1_1.png']];
+        var src = "//game.gtimg.cn/images/actdaoju/act/a20231130nianggun/"
+        var wish = [0, 0, 1, 0, 1], xyz = [0, 0, 0, 0, 0];
+
+        function reSetImg(a, b) {
+            console.log(a);
+            document.getElementById('xyw' + a).src = src + ssrc[a - 1][b];
+            //输出src
+            console.log('xy' + (parseInt(a) + 1));
+            console.log(src + ssrc[a][b]);
+        }
+        function PTTSendClickX(btnType, btnId, btnText) {
+            // 检查按钮类型、按钮ID和按钮文本是否匹配购买按钮
+            if (btnText === '购买') {
+                if (btnId === 'btnbuy1') { alert("成功获得：钥匙*1 许愿币*1"); keys += 1; xyb += 1; }
+                else if (btnId === 'btnbuy2') { alert("成功获得：钥匙*11 许愿币*11"); keys += 11; xyb += 11; }
+                else if (btnId === 'btnbuy3') { alert("成功获得：钥匙*1000 许愿币*1000"); keys += 1000; xyb += 1000; }
+            }
+            else if (btnText === '抽一次') { amsChouX(1); }//
+            else if (btnText === '抽十次') { amsChouX(10); }//
+            else if (btnText === '积分兑换') { amsExchangeX(btnId); }//
+            else if (btnText === '更换') { wishChangeX(btnId); }
+            else if (btnText === '投入1许愿币') { wishAddX(btnId); }
+            else if (btnText === '领取') {
+
+                if (btnId === 'btnchangeyw1') { if (xyz[0] < 236) { alert('许愿值不足'); return; } showPopup2(S[0][wish[0]], 0); xyz[0] -= 236; }//
+                else if (btnId === 'btnchangeyw2') { if (xyz[1] < 198) { alert('许愿值不足'); return; } showPopup2(S[1][wish[1]], 0); xyz[1] -= 198; }//
+                else if (btnId === 'btnchangeyw3') { if (xyz[2] < 118) { alert('许愿值不足'); return; } showPopup2(S[2][wish[2]], 0); xyz[2] -= 118; }//
+                else if (btnId === 'btnchangeyw4') { if (xyz[3] < 78) { alert('许愿值不足'); return; } showPopup2(S[3][wish[3]], 0); xyz[3] -= 78; }//
+                else if (btnId === 'btnchangeyw5') { if (xyz[4] < 58) { alert('许愿值不足'); return; } showPopup2(S[4][wish[4]], 0); xyz[4] -= 58; }//
+
+            }
+            updateDisplay("xybDisplay", xyb);
+            updateDisplay("keysDisplay", keys);
+            updateallxyz();
+        }
+
+
+
+
+        function wishChangeX(id) {
+
+            var p = (parseInt(id.match(/\d+(\.\d+)?/g)[0]) - 1) % 2;//0选A，1选B
+            var i = Math.trunc((parseInt(id.match(/\d+(\.\d+)?/g)[0]) + 1) / 2);
+
+            confirm('您选择了【' + S[i - 1][p] + '】' + '作为心愿道具，确认将清空当前许愿池的现有许愿值【当前许愿值为：' + xyz[i - 1] + '】，请确认？').then(function (result) {
+                if (result) {
+                    xyz[i - 1] = 0;
+                    if (wish[i - 1] != p) { updateDisplay("n" + i, S[i - 1][p]); wish[i - 1] = p; reSetImg(i, p); }
+                    for (var j = 0; j < 10; j++) {
+                        if (i == j) closePopup('xy' + j);
+                    }
+                    updateallxyz();
+                } else {
+                    for (var j = 0; j < 10; j++) {
+                        if (i == j) closePopup('xy' + j);
+                    }
+                }
+            }).catch(function (error) {
+                updateallxyz();
+
+                for (var j = 0; j < 10; j++) {
+                    if (i == j) closePopup('xy' + j);
+                }
+            });
+
+        }
+
+
+        function closePopup(popupId) {
+            // 获取弹窗元素
+            var popupElement = document.getElementById(popupId);
+
+            // 关闭弹窗
+            if (popupElement) {
+                popupElement.style.display = 'none';
+            }
+        }
+        function wishAddX(id) {
+            if (xyb < 1) { alert('许愿币不足'); return; }
+            xyb -= 1;
+            updateDisplay("xybDisplay", xyb);
+            //许愿币抽奖
+            makeWish(parseInt(id.match(/\d+(\.\d+)?/g)[0]));
+            //更新所有许愿值数量
+            updateallxyz();
+
+        }
+        function makeWish(id) {
+            id--;
+            // 许愿概率
+            const prizes = [
+                { name: '许愿值50', probability: 0.002 },
+                { name: '许愿值20', probability: 0.006 },
+                { name: '许愿值10', probability: 0.012 },
+                { name: '许愿值5', probability: 0.03 },
+                { name: '许愿值2', probability: 0.35 },
+                { name: '许愿值1', probability: 0.6 },
+                // 其他奖品...
+            ];
+            // 计算所有奖品的总概率
+
+
+            // 遍历奖品列表，根据随机概率值确定选中的物品
+
+            const totalProbability = prizes.reduce((total, prize) => total + prize.probability, 0.0);
+
+            // 生成一个随机概率值
+            const randomProbability = Math.random() * totalProbability;
+
+            // 初始化当前概率和选中的物品
+            let currentProbability = 0;
+            let selectedItem = [];
+            // Code inside the loop
+
+            for (const prize of prizes) {
+                currentProbability += prize.probability;
+                if (randomProbability <= currentProbability) {
+                    selectedItem.push(prize.name);
+                    xyz[id] += parseInt(prize.name.match(/\d+(\.\d+)?/g)[0]);
+                    break;
+                }
+            }
+            newshowPopup(selectedItem, 'jlname');
+            showpages("popdc");
+        }
+        function updateallxyz() {
+
+            for (var ix = 1; ix < 6; ix++) {
+                console.log('xyzDisplay' + ix);
+                updateDisplay('xyzDisplay' + ix, xyz[ix - 1]);
+            }
+        }
+        function amsChouX(num) {
+            if (keys < num) {
+                alert('钥匙不足');
+                return;
+            }
+            drawLottery(num);
+            updateDisplay("jfDisplay", jf);
+            keys -= num;
+
+        }
+        function amsExchangeX(id) {
+
+            if (id === 'btndhuanh1') { if (jf < 588) { alert('积分不足'); return; } jf -= 588; showPopup2('觉醒版 QBZ-03-王者蔷薇'); }
+            else if (id === 'btndhuanh2') { if (jf < 488) { alert('积分不足'); return; } jf -= 488; showPopup2('王者-春', 1); }
+            else if (id === 'btndhuanh3') { if (jf < 488) { alert('积分不足'); return; } jf -= 488; showPopup2('星神-枪娘默 皮肤（不可交易）', 1); }
+            else if (id === 'btndhuanh4') { if (jf < 388) { alert('积分不足'); return; } jf -= 388; showPopup2('斯泰尔-枪娘暗刃', 1); }
+            else if (id === 'btndhuanh5') { if (jf < 288) { alert('积分不足'); return; } jf -= 288; showPopup2('毁灭耀金皮肤（不可交易）', 1); }
+            else if (id === 'btndhuanh6') { if (jf < 288) { alert('积分不足'); return; } jf -= 288; showPopup2('裁决-雪莉杨', 1); }
+            else if (id === 'btndhuanh7') { if (jf < 188) { alert('积分不足'); return; } jf -= 188; showPopup2('Barrett-极光', 1); }
+            else if (id === 'btndhuanh8') { if (jf < 188) { alert('积分不足'); return; } jf -= 188; showPopup2('M4A1-黑骑士', 1); }
+            else if (id === 'btndhuanh9') { if (jf < 128) { alert('积分不足'); return; } jf -= 128; showPopup2('枪娘阿敏玩偶（不可交易）', 1); }
+            else if (id === 'btndhuanh10') { if (jf < 88) { alert('积分不足'); return; } jf -= 88; showPopup2('天使灵狐玩偶（不可交易）', 1); }
+            else if (id === 'btndhuanh11') { if (jf < 10) { alert('积分不足'); return; } jf -= 10; showPopup2('属性变更券x5', 1); }
+            else if (id === 'btndhuanh12') { if (jf < 4) { alert('积分不足'); return; } jf -= 4; showPopup2('交易专用钥匙x1', 1); }
+            updateDisplay("jfDisplay", jf);
+        }
+        function showPopup2(item, op) {
+            // 显示遮罩和弹窗
+            document.getElementById('overlay1').style.display = 'block';
+            document.getElementById('popup1').style.display = 'block';
+            if (op == 1) { addzc(item); }//发送不算
+
+
+            // 在弹窗中显示抽中的物品
+            const popupContent = document.getElementById('prizeList1');
+            popupContent.textContent = item;
+        }
+        function addzc(its) {
+            itemsX.unshift(its);
+            items_b.unshift(0);
+
+        }
+        function drawLottery(x) {
+            // 抽奖概率
+            const prizes = [
+                { name: '觉醒版 QBZ-03-王者蔷薇', probability: 0.20 },
+                { name: '王者-春', probability: 0.25 },
+                { name: '星神-枪娘默 皮肤（不可交易）', probability: 0.25 },
+                { name: '斯泰尔-枪娘暗刃', probability: 0.30 },
+                { name: '毁灭耀金皮肤（不可交易）', probability: 0.40 },
+                { name: '裁决-雪莉杨', probability: 0.40 },
+                { name: 'Barrett-极光', probability: 0.60 },
+                { name: 'M4A1-黑骑士', probability: 0.60 },
+                { name: '枪娘阿敏玩偶（不可交易）', probability: 0.80 },
+                { name: '天使灵狐玩偶（不可交易）', probability: 1.20 },
+                { name: '王者之石x1', probability: 4.90 },
+                { name: '积分*100', probability: 0.10 },
+                { name: '积分*12', probability: 5.00 },
+                { name: '积分*6', probability: 15.00 },
+                { name: '积分*4', probability: 30.00 },
+                { name: '积分*3', probability: 40.00 }
+            ];
+
+            // 定义一个空数组，用于存储抽中的物品
+            const selectedItems = [];
+
+            // 计算所有奖品的总概率
+            const totalProbability = prizes.reduce((total, prize) => total + prize.probability, 0);
+
+            // 循环抽奖次数
+            for (let i = 0; i < x; i++) {
+                // 生成一个随机概率值
+                const randomProbability = Math.random() * totalProbability;
+
+                // 初始化当前概率和选中的物品
+                let currentProbability = 0;
+                let selectedItem = null;
+
+                // 遍历奖品列表，根据随机概率值确定选中的物品
+                for (const prize of prizes) {
+                    currentProbability += prize.probability;
+                    if (randomProbability <= currentProbability) {
+                        selectedItem = prize.name;
+                        const matchResult = selectedItem.match(/\d+(\.\d+)?/g);
+                        if (matchResult) {
+                            jf += parseInt(matchResult[0]);
+                        }
+                        break;
+                    }
+                }
+                for (var j = 0; j < PZX.length; j++) {
+                    if (selectedItem == PZX[j]) {
+                        addzc(selectedItem);
+                        break;
+                    }
+                }
+
+                // 将选中的物品添加到数组中
+
+                selectedItems.push(selectedItem);
+            }
+
+            // 调用显示函数，展示抽中的物品
+            if (x == 1) {
+                newshowPopup(selectedItems, 'jlname');
+                showpages("popdc");
+            }
+            else {
+                newshowPopup(selectedItems, 'choulist');
+                showpages("popJl");
+            }
+
+            //showPopup(selectedItems);
+        }
+        function newshowPopup(items, id) {//id是看展示页面是什么就写什么
+            var choulistDiv = document.getElementById(id);
+
+            // Clear previous content in choulistDiv
+            choulistDiv.innerHTML = '';
+
+            // Loop through items and append each one in <p> tags to choulistDiv
+            items.forEach(function (item) {
+                var pElement = document.createElement('p');
+                pElement.textContent = item;
+                choulistDiv.appendChild(pElement);
+            });
+        }
+        function showpages(st) {
+            // 获取弹窗元素
+            var popup = document.getElementById(st);
+
+            // 设置弹窗可见性
+            if (popup) {
+                popup.style.visibility = "visible";
+            }
+        }
+        function hiddenpages(st) {
+            // 获取弹窗元素
+            var popup = document.getElementById(st);
+
+            // 设置弹窗可见性
+            if (popup) {
+                popup.style.visibility = "hidden";
+            }
+        }
+        function hidePopup() {
+            // 隐藏遮罩和弹窗
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('popup').style.display = 'none';
+        }
+        function hidePopup1() {
+            // 隐藏遮罩和弹窗
+            document.getElementById('overlay1').style.display = 'none';
+            document.getElementById('popup1').style.display = 'none';
+        }
+
+        function updateDisplay(dis, res) {
+            // 更新页面上显示的剩余钥匙数量
+            var Display = document.getElementById(dis);
+            if (Display) {
+                Display.textContent = res;
+            }
+        }
+
+    </script>
+    <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+    <script src="//game.gtimg.cn/images/js/milo-next/latest/milo.gbk.min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+    <script src="//js01.daoju.qq.com/common/js/act/dj_header_v2.js"></script>
+    <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+    <script src="comm.js"></script>
+    <!--<script src="js/comm.js"></script>-->
+    <script src="//act.daoju.qq.com/act/a20231130nianggun/js/index.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script>
+        //此段代码不能放到外链JS中，
+        var setSite = { //设置网站属性 
+            siteType: "a20231130nianggun", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN,不支持点(.)、下划线(_)
+            pageName: "首页", //必填项:页面中文名 
+            project: "other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;官网微社区base;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;皮肤skin;默认other;
+            osact: 0 //选填项:默认是0。osact=0表示非官网专题；osact=pc表示pc官网/pc官网专题；osact=m表示移动官网/移动官网专题；osact=ingame表示微社区/微社区专题
+        };
+
+    </script>
+</body>
+
+</html>
+```
